@@ -1,40 +1,45 @@
 <script setup>
-import { ref } from 'vue'
+import 'leaflet/dist/leaflet.css';
+
+import L from 'leaflet';
+import { ref, onMounted } from 'vue';
 
 defineProps({
-  msg: String
-})
+    msg: String
+});
 
-const count = ref(0)
+const count = ref(0);
+
+onMounted(() => {
+    var mymap = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
+        {
+            attribution:
+                'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'fanzaibb/ckw8m6n2n5tul15o6m50qgefa',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken:
+                'pk.eyJ1IjoiZmFuemFpYmIiLCJhIjoiY2t3OGxzdHF5Y3M2bjJ1cTE3NXpwNThvNyJ9.Ev_Nzbzssxl5qWd-qVW2uQ'
+        }
+    ).addTo(mymap);
+});
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
 
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-  </p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Documentation
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
-  </p>
-
-  <button type="button" @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+    <div id="map"></div>
 </template>
 
 <style scoped>
 a {
-  color: #42b983;
+    color: #42b983;
+}
+
+#map {
+    height: 360px;
 }
 </style>
