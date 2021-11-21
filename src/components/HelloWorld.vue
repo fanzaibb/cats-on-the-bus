@@ -1,7 +1,6 @@
 <script setup>
 import { getAllCities, getCityBus } from '@/api';
 import { cities, routes } from '@/utils/cities.json';
-import { ref } from 'vue';
 import 'leaflet/dist/leaflet.css';
 
 import L from 'leaflet';
