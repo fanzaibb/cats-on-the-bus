@@ -1,0 +1,2067 @@
+{
+    "cities": [
+        { "CityName": "臺北市", "City": "Taipei" },
+        { "CityName": "新北市", "City": "NewTaipei" },
+        { "CityName": "桃園市", "City": "Taoyuan" },
+        { "CityName": "臺中市", "City": "Taichung" },
+        { "CityName": "臺南市", "City": "Tainan" },
+        { "CityName": "高雄市", "City": "Kaohsiung" },
+        { "CityName": "基隆市", "City": "Keelung" },
+        { "CityName": "新竹市", "City": "Hsinchu" },
+        { "CityName": "新竹縣", "City": "HsinchuCounty" },
+        { "CityName": "苗栗縣", "City": "MiaoliCounty" },
+        { "CityName": "彰化縣", "City": "ChanghuaCounty" },
+        { "CityName": "南投縣", "City": "NantouCounty" },
+        { "CityName": "雲林縣", "City": "YunlinCounty" },
+        { "CityName": "嘉義縣", "City": "ChiayiCounty" },
+        { "CityName": "嘉義市", "City": "Chiayi" },
+        { "CityName": "屏東縣", "City": "PingtungCounty" },
+        { "CityName": "宜蘭縣", "City": "YilanCounty" },
+        { "CityName": "花蓮縣", "City": "HualienCounty" },
+        { "CityName": "臺東縣", "City": "TaitungCounty" },
+        { "CityName": "金門縣", "City": "KinmenCounty" },
+        { "CityName": "澎湖縣", "City": "PenghuCounty" },
+        { "CityName": "連江縣", "City": "LienchiangCounty" }
+    ],
+    "routes": [
+        {
+            "RouteUID": "NWT10116",
+            "RouteID": "10116",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101160",
+                    "SubRouteID": "101160",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "242",
+                        "En": "242"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "1710"
+                },
+                {
+                    "SubRouteUID": "NWT101160",
+                    "SubRouteID": "101160",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "242",
+                        "En": "242"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "1710"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "242",
+                "En": "242"
+            },
+            "DepartureStopNameZh": "中和",
+            "DepartureStopNameEn": "Zhonghe",
+            "DestinationStopNameZh": "西門",
+            "DestinationStopNameEn": "Ximen",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "智光商職-重慶南路三段(中正橋)",
+            "FareBufferZoneDescriptionEn": "Chih-Kuang Senior Commercial & Industrial Vocational High School-Chongqing S. Road Sec. 3(Zhongzheng Bridge)",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400024200",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10143",
+            "RouteID": "10143",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT10143",
+                    "SubRouteID": "10143",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "棕7",
+                        "En": "BR7"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0525",
+                    "LastBusTime": "2245",
+                    "HolidayFirstBusTime": "0525",
+                    "HolidayLastBusTime": "2215"
+                },
+                {
+                    "SubRouteUID": "NWT10143",
+                    "SubRouteID": "10143",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "棕7",
+                        "En": "BR7"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0525",
+                    "LastBusTime": "2245",
+                    "HolidayFirstBusTime": "0525",
+                    "HolidayLastBusTime": "2215"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "棕7",
+                "En": "BR7"
+            },
+            "DepartureStopNameZh": "新店站",
+            "DepartureStopNameEn": "Xindian Station",
+            "DestinationStopNameZh": "臺北市政府",
+            "DestinationStopNameEn": "Taipei City Hall",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "景美女中-博嘉國小",
+            "FareBufferZoneDescriptionEn": "Jingmei Girls High School-Bojia Elementary School",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0414000700",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10148",
+            "RouteID": "10148",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101480",
+                    "SubRouteID": "101480",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "702",
+                        "En": "702"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2130",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2130"
+                },
+                {
+                    "SubRouteUID": "NWT101480",
+                    "SubRouteID": "101480",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "702",
+                        "En": "702"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2130",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2130"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "702",
+                "En": "702"
+            },
+            "DepartureStopNameZh": "三峽",
+            "DepartureStopNameEn": "Sanxia",
+            "DestinationStopNameZh": "板橋公車站",
+            "DestinationStopNameEn": "Banqiao Bus Station",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "風路坑-樹林後火車站",
+            "FareBufferZoneDescriptionEn": "Fonlukeng-Shulin Train Station Rear",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400070200",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10149",
+            "RouteID": "10149",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101490",
+                    "SubRouteID": "101490",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "624綠野香坡",
+                        "En": "624G"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0730",
+                    "LastBusTime": "2000",
+                    "HolidayFirstBusTime": "0700",
+                    "HolidayLastBusTime": "1930"
+                },
+                {
+                    "SubRouteUID": "NWT101490",
+                    "SubRouteID": "101490",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "624綠野香坡",
+                        "En": "624G"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0730",
+                    "LastBusTime": "2000",
+                    "HolidayFirstBusTime": "0700",
+                    "HolidayLastBusTime": "1930"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "624綠野香坡",
+                "En": "624G"
+            },
+            "DepartureStopNameZh": "新店",
+            "DepartureStopNameEn": "Xindian",
+            "DestinationStopNameZh": "西門",
+            "DestinationStopNameEn": "Ximen",
+            "TicketPriceDescriptionZh": "兩段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "智光商職-重慶南路三段(中正橋)",
+            "FareBufferZoneDescriptionEn": "Chih-Kuang Senior Commercial & Industrial Vocational High School-Chongqing S. Road Sec. 3(Zhongzheng Bridge)",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400062470",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10151",
+            "RouteID": "10151",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101510",
+                    "SubRouteID": "101510",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "701",
+                        "En": "701"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2220",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2220"
+                },
+                {
+                    "SubRouteUID": "NWT101510",
+                    "SubRouteID": "101510",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "701",
+                        "En": "701"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2220",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2220"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "701",
+                "En": "701"
+            },
+            "DepartureStopNameZh": "迴龍",
+            "DepartureStopNameEn": "Huilong",
+            "DestinationStopNameZh": "西門",
+            "DestinationStopNameEn": "Ximen",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "北門街-捷運龍山寺站",
+            "FareBufferZoneDescriptionEn": "Beimen St. - MRT Longshan Temple Station",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400070100",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10161",
+            "RouteID": "10161",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101610",
+                    "SubRouteID": "101610",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "231",
+                        "En": "231"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2000",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "2000"
+                },
+                {
+                    "SubRouteUID": "NWT101610",
+                    "SubRouteID": "101610",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "231",
+                        "En": "231"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2000",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "2000"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "231",
+                "En": "231"
+            },
+            "DepartureStopNameZh": "宏國德霖科技大學",
+            "DepartureStopNameEn": "Hungkuo Delin University of Technology",
+            "DestinationStopNameZh": "捷運西門站",
+            "DestinationStopNameEn": "MRT Ximen Sta.",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400023100",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10162",
+            "RouteID": "10162",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT10162",
+                    "SubRouteID": "10162",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "245",
+                        "En": "245"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2240",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2240"
+                },
+                {
+                    "SubRouteUID": "NWT10162",
+                    "SubRouteID": "10162",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "245",
+                        "En": "245"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2240",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2240"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "245",
+                "En": "245"
+            },
+            "DepartureStopNameZh": "宏國德霖科技大學",
+            "DepartureStopNameEn": "Hungkuo Delin University of Technology",
+            "DestinationStopNameZh": "捷運臺大醫院站",
+            "DestinationStopNameEn": "MRT NTU Hospital Sta.",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400024500",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10163",
+            "RouteID": "10163",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158438",
+                    "SubRouteID": "158438",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "656",
+                        "En": "656"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2240",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2240"
+                },
+                {
+                    "SubRouteUID": "NWT158438",
+                    "SubRouteID": "158438",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "656",
+                        "En": "656"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2240",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2240"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "656",
+                "En": "656"
+            },
+            "DepartureStopNameZh": "宏國德霖科技大學",
+            "DepartureStopNameEn": "Hungkuo Delin University of Technology",
+            "DestinationStopNameZh": "捷運臺大醫院站",
+            "DestinationStopNameEn": "MRT NTU Hospital Sta.",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400065600",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10164",
+            "RouteID": "10164",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT10164",
+                    "SubRouteID": "10164",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "657",
+                        "En": "657"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2200"
+                },
+                {
+                    "SubRouteUID": "NWT10164",
+                    "SubRouteID": "10164",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "657",
+                        "En": "657"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2200"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "657",
+                "En": "657"
+            },
+            "DepartureStopNameZh": "宏國德霖科技大學",
+            "DepartureStopNameEn": "Hungkuo Delin University of Technology",
+            "DestinationStopNameZh": "華江橋",
+            "DestinationStopNameEn": "Huajiang Bridge",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400065700",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10171",
+            "RouteID": "10171",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101710",
+                    "SubRouteID": "101710",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "201",
+                        "En": "201"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0730",
+                    "LastBusTime": "1720"
+                },
+                {
+                    "SubRouteUID": "NWT101710",
+                    "SubRouteID": "101710",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "201",
+                        "En": "201"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0730",
+                    "LastBusTime": "1720"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "201",
+                "En": "201"
+            },
+            "DepartureStopNameZh": "中和",
+            "DepartureStopNameEn": "Zhonghe",
+            "DestinationStopNameZh": "捷運龍山寺站",
+            "DestinationStopNameEn": "MRT Longshan Temple Sta.",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400020100",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10172",
+            "RouteID": "10172",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101720",
+                    "SubRouteID": "101720",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "243",
+                        "En": "243"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2100",
+                    "HolidayFirstBusTime": "0550",
+                    "HolidayLastBusTime": "1830"
+                },
+                {
+                    "SubRouteUID": "NWT101720",
+                    "SubRouteID": "101720",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "243",
+                        "En": "243"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2100",
+                    "HolidayFirstBusTime": "0550",
+                    "HolidayLastBusTime": "1830"
+                },
+                {
+                    "SubRouteUID": "NWT159537",
+                    "SubRouteID": "159537",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "243寵物公車(暫停營運)",
+                        "En": "243PET"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2100",
+                    "HolidayFirstBusTime": "0550",
+                    "HolidayLastBusTime": "1830"
+                },
+                {
+                    "SubRouteUID": "NWT159537",
+                    "SubRouteID": "159537",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "243寵物公車(暫停營運)",
+                        "En": "243PET"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2100",
+                    "HolidayFirstBusTime": "0550",
+                    "HolidayLastBusTime": "1830"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "243",
+                "En": "243"
+            },
+            "DepartureStopNameZh": "中和",
+            "DepartureStopNameEn": "Zhonghe",
+            "DestinationStopNameZh": "西門",
+            "DestinationStopNameEn": "Ximen",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "莊敬路-重慶南路三段(中正橋)",
+            "FareBufferZoneDescriptionEn": "Zhuangjing Rd.-Chongqing S. Road Sec. 3(Zhongzheng Bridge)",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400024300",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10173",
+            "RouteID": "10173",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT10173",
+                    "SubRouteID": "10173",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "241",
+                        "En": "241"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2200"
+                },
+                {
+                    "SubRouteUID": "NWT10173",
+                    "SubRouteID": "10173",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "241",
+                        "En": "241"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2200"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "241",
+                "En": "241"
+            },
+            "DepartureStopNameZh": "中和",
+            "DepartureStopNameEn": "Zhonghe",
+            "DestinationStopNameZh": "博愛路",
+            "DestinationStopNameEn": "Boai Rd.",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "得和路(民生路)-重慶南路三段(中正橋)",
+            "FareBufferZoneDescriptionEn": "Dehe Rd.-Chongqing S. Road Sec. 3(Zhongzheng Bridge)",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400024100",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10195",
+            "RouteID": "10195",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT101950",
+                    "SubRouteID": "101950",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "705",
+                        "En": "705"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0500",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0500",
+                    "HolidayLastBusTime": "2200"
+                },
+                {
+                    "SubRouteUID": "NWT101950",
+                    "SubRouteID": "101950",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "705",
+                        "En": "705"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0500",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0500",
+                    "HolidayLastBusTime": "2200"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "705",
+                "En": "705"
+            },
+            "DepartureStopNameZh": "三峽",
+            "DepartureStopNameEn": "Sanxia",
+            "DestinationStopNameZh": "西門",
+            "DestinationStopNameEn": "Ximen",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400070500",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10196",
+            "RouteID": "10196",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16176",
+                    "OperatorName": {
+                        "Zh_tw": "臺北客運",
+                        "En": "Taipei Bus Co., Ltd."
+                    },
+                    "OperatorCode": "TaipeiBus",
+                    "OperatorNo": "1407"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158514",
+                    "SubRouteID": "158514",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "706",
+                        "En": "706"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0500",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0500",
+                    "HolidayLastBusTime": "2200"
+                },
+                {
+                    "SubRouteUID": "NWT158514",
+                    "SubRouteID": "158514",
+                    "OperatorIDs": ["16176"],
+                    "SubRouteName": {
+                        "Zh_tw": "706",
+                        "En": "706"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0500",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0500",
+                    "HolidayLastBusTime": "2200"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "706",
+                "En": "706"
+            },
+            "DepartureStopNameZh": "三峽",
+            "DepartureStopNameEn": "Sanxia",
+            "DestinationStopNameZh": "西門",
+            "DestinationStopNameEn": "Ximen",
+            "TicketPriceDescriptionZh": "三段票",
+            "TicketPriceDescriptionEn": "3 segments",
+            "FareBufferZoneDescriptionZh": "媽祖田-捷運永寧站 佳和公園-重慶南路三段(中正橋)",
+            "FareBufferZoneDescriptionEn": "Mazutian-MRT YongNing Station , ChiaHer Park-Chongqing S. Road Sec. 3(Zhongzheng Bridge)",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400070600",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10281",
+            "RouteID": "10281",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16177",
+                    "OperatorName": {
+                        "Zh_tw": "首都客運"
+                    },
+                    "OperatorCode": "CapitalBus",
+                    "OperatorNo": "0913"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158434",
+                    "SubRouteID": "158434",
+                    "OperatorIDs": ["16177"],
+                    "SubRouteName": {
+                        "Zh_tw": "藍2",
+                        "En": "BL2"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2300",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2300"
+                },
+                {
+                    "SubRouteUID": "NWT158434",
+                    "SubRouteID": "158434",
+                    "OperatorIDs": ["16177"],
+                    "SubRouteName": {
+                        "Zh_tw": "藍2",
+                        "En": "BL2"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2300",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2300"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "藍2",
+                "En": "BL2"
+            },
+            "DepartureStopNameZh": "新莊",
+            "DepartureStopNameEn": "Xinzhuang",
+            "DestinationStopNameZh": "捷運台大醫院站",
+            "DestinationStopNameEn": "MRT NTU Hospital Station",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0412000200",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10325",
+            "RouteID": "10325",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16178",
+                    "OperatorName": {
+                        "Zh_tw": "新店客運"
+                    },
+                    "OperatorCode": "SindianBus",
+                    "OperatorNo": "1304"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158645",
+                    "SubRouteID": "158645",
+                    "OperatorIDs": ["16178"],
+                    "SubRouteName": {
+                        "Zh_tw": "909",
+                        "En": "909"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2200"
+                },
+                {
+                    "SubRouteUID": "NWT158645",
+                    "SubRouteID": "158645",
+                    "OperatorIDs": ["16178"],
+                    "SubRouteName": {
+                        "Zh_tw": "909",
+                        "En": "909"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2200"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "909",
+                "En": "909"
+            },
+            "DepartureStopNameZh": "錦繡山莊",
+            "DepartureStopNameEn": "Jinxiu Shanzhuang",
+            "DestinationStopNameZh": "松山機場",
+            "DestinationStopNameEn": "Taipei Songshan Airport",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "中正環河路口-成功國宅",
+            "FareBufferZoneDescriptionEn": "Zhongzheng Huanhe Rd. Intersection - Chenggong Public Housing",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400090900",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10329",
+            "RouteID": "10329",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16178",
+                    "OperatorName": {
+                        "Zh_tw": "新店客運"
+                    },
+                    "OperatorCode": "SindianBus",
+                    "OperatorNo": "1304"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT10329",
+                    "SubRouteID": "10329",
+                    "OperatorIDs": ["16178"],
+                    "SubRouteName": {
+                        "Zh_tw": "906",
+                        "En": "906"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0535",
+                    "HolidayLastBusTime": "2200"
+                },
+                {
+                    "SubRouteUID": "NWT10329",
+                    "SubRouteID": "10329",
+                    "OperatorIDs": ["16178"],
+                    "SubRouteName": {
+                        "Zh_tw": "906",
+                        "En": "906"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0535",
+                    "HolidayLastBusTime": "2200"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "906",
+                "En": "906"
+            },
+            "DepartureStopNameZh": "錦繡山莊",
+            "DepartureStopNameEn": "Jinxiu Shanzhuang",
+            "DestinationStopNameZh": "松山機場",
+            "DestinationStopNameEn": "Taipei Songshan Airport",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "2 segments",
+            "FareBufferZoneDescriptionZh": "中正環河路口-成功國宅",
+            "FareBufferZoneDescriptionEn": "Zhongzheng Huanhe Rd. Intersection - Chenggong Public Housing",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400090600",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10424",
+            "RouteID": "10424",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16179",
+                    "OperatorName": {
+                        "Zh_tw": "三重客運"
+                    },
+                    "OperatorCode": "SanChungBus ",
+                    "OperatorNo": "0301"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT10424",
+                    "SubRouteID": "10424",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "520",
+                        "En": "520"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0545",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "2100"
+                },
+                {
+                    "SubRouteUID": "NWT10424",
+                    "SubRouteID": "10424",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "520",
+                        "En": "520"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0545",
+                    "LastBusTime": "2200",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "2100"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "520",
+                "En": "520"
+            },
+            "DepartureStopNameZh": "捷運新北產業園區",
+            "DepartureStopNameEn": "MRT New Taipei Industrial Park",
+            "DestinationStopNameZh": "捷運民權西路站",
+            "DestinationStopNameEn": "MRT Minquan W. Rd. Sta.",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "Charge for 1 sections",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400052000",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10453",
+            "RouteID": "10453",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16179",
+                    "OperatorName": {
+                        "Zh_tw": "三重客運"
+                    },
+                    "OperatorCode": "SanChungBus ",
+                    "OperatorNo": "0301"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158513",
+                    "SubRouteID": "158513",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "640",
+                        "En": "640"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0540",
+                    "LastBusTime": "2230",
+                    "HolidayFirstBusTime": "0540",
+                    "HolidayLastBusTime": "2230"
+                },
+                {
+                    "SubRouteUID": "NWT158513",
+                    "SubRouteID": "158513",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "640",
+                        "En": "640"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0540",
+                    "LastBusTime": "2230",
+                    "HolidayFirstBusTime": "0540",
+                    "HolidayLastBusTime": "2230"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "640",
+                "En": "640"
+            },
+            "DepartureStopNameZh": "五股",
+            "DepartureStopNameEn": "Wugu",
+            "DestinationStopNameZh": "捷運台大醫院站",
+            "DestinationStopNameEn": "MRT NTU Hospital Sta.",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "Charge for 2 sections",
+            "FareBufferZoneDescriptionZh": "和泰新村-捷運三重站",
+            "FareBufferZoneDescriptionEn": "Hotai New Village-MRT Sanchong Station",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400064000",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10474",
+            "RouteID": "10474",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16179",
+                    "OperatorName": {
+                        "Zh_tw": "三重客運"
+                    },
+                    "OperatorCode": "SanChungBus ",
+                    "OperatorNo": "0301"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT10474",
+                    "SubRouteID": "10474",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "636",
+                        "En": "636"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2235",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2235"
+                },
+                {
+                    "SubRouteUID": "NWT10474",
+                    "SubRouteID": "10474",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "636",
+                        "En": "636"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2235",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2235"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "636",
+                "En": "636"
+            },
+            "DepartureStopNameZh": "迴龍",
+            "DepartureStopNameEn": "Huilong",
+            "DestinationStopNameZh": "捷運中山站",
+            "DestinationStopNameEn": "MRT Zhongshan Sta.",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "Charge for 2 sections",
+            "FareBufferZoneDescriptionZh": "捷運迴龍站-五谷王廟",
+            "FareBufferZoneDescriptionEn": "MRT Huilong Station-Wuguwang Temple",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400063600",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10475",
+            "RouteID": "10475",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16179",
+                    "OperatorName": {
+                        "Zh_tw": "三重客運"
+                    },
+                    "OperatorCode": "SanChungBus ",
+                    "OperatorNo": "0301"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158511",
+                    "SubRouteID": "158511",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "635",
+                        "En": "635"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2250",
+                    "HolidayFirstBusTime": "0520",
+                    "HolidayLastBusTime": "2250"
+                },
+                {
+                    "SubRouteUID": "NWT158511",
+                    "SubRouteID": "158511",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "635",
+                        "En": "635"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2250",
+                    "HolidayFirstBusTime": "0520",
+                    "HolidayLastBusTime": "2250"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "635",
+                "En": "635"
+            },
+            "DepartureStopNameZh": "龍壽里",
+            "DepartureStopNameEn": "Longshou Li",
+            "DestinationStopNameZh": "臺北",
+            "DestinationStopNameEn": "Taipei",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "Charge for 2 sections",
+            "FareBufferZoneDescriptionZh": "捷運迴龍站-五谷王廟",
+            "FareBufferZoneDescriptionEn": "MRT Huilong Station-Wuguwang Temple",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400063500",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10491",
+            "RouteID": "10491",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16179",
+                    "OperatorName": {
+                        "Zh_tw": "三重客運"
+                    },
+                    "OperatorCode": "SanChungBus ",
+                    "OperatorNo": "0301"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT104910",
+                    "SubRouteID": "104910",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "637",
+                        "En": "637"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2235",
+                    "HolidayFirstBusTime": "0520",
+                    "HolidayLastBusTime": "2235"
+                },
+                {
+                    "SubRouteUID": "NWT104910",
+                    "SubRouteID": "104910",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "637",
+                        "En": "637"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0520",
+                    "LastBusTime": "2235",
+                    "HolidayFirstBusTime": "0520",
+                    "HolidayLastBusTime": "2235"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "637",
+                "En": "637"
+            },
+            "DepartureStopNameZh": "五股",
+            "DepartureStopNameEn": "Wugu",
+            "DestinationStopNameZh": "臺北",
+            "DestinationStopNameEn": "Taipei",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "Charge for 2 sections",
+            "FareBufferZoneDescriptionZh": "捷運丹鳳站-五谷王廟",
+            "FareBufferZoneDescriptionEn": "MRT Danfeng Station-Wuguwang Temple",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400063700",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10492",
+            "RouteID": "10492",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16179",
+                    "OperatorName": {
+                        "Zh_tw": "三重客運"
+                    },
+                    "OperatorCode": "SanChungBus ",
+                    "OperatorNo": "0301"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT104920",
+                    "SubRouteID": "104920",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "638",
+                        "En": "638"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0515",
+                    "LastBusTime": "2205",
+                    "HolidayFirstBusTime": "0515",
+                    "HolidayLastBusTime": "2205"
+                },
+                {
+                    "SubRouteUID": "NWT104920",
+                    "SubRouteID": "104920",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "638",
+                        "En": "638"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0515",
+                    "LastBusTime": "2205",
+                    "HolidayFirstBusTime": "0515",
+                    "HolidayLastBusTime": "2205"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "638",
+                "En": "638"
+            },
+            "DepartureStopNameZh": "五股",
+            "DepartureStopNameEn": "Wugu",
+            "DestinationStopNameZh": "捷運南京復興站",
+            "DestinationStopNameEn": "MRT Nanjing Fuxing Sta.",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "Charge for 2 sections",
+            "FareBufferZoneDescriptionZh": "捷運丹鳳站-五谷王廟",
+            "FareBufferZoneDescriptionEn": "MRT Danfeng Station-Wuguwang Temple",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400063800",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10511",
+            "RouteID": "10511",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16179",
+                    "OperatorName": {
+                        "Zh_tw": "三重客運"
+                    },
+                    "OperatorCode": "SanChungBus ",
+                    "OperatorNo": "0301"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT105110",
+                    "SubRouteID": "105110",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "639",
+                        "En": "639"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0500",
+                    "LastBusTime": "2150",
+                    "HolidayFirstBusTime": "0500",
+                    "HolidayLastBusTime": "2150"
+                },
+                {
+                    "SubRouteUID": "NWT105110",
+                    "SubRouteID": "105110",
+                    "OperatorIDs": ["16179"],
+                    "SubRouteName": {
+                        "Zh_tw": "639",
+                        "En": "639"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0500",
+                    "LastBusTime": "2150",
+                    "HolidayFirstBusTime": "0500",
+                    "HolidayLastBusTime": "2150"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "639",
+                "En": "639"
+            },
+            "DepartureStopNameZh": "東昇公園",
+            "DestinationStopNameZh": "捷運北門站",
+            "DestinationStopNameEn": "MRT Beimen Station",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "Charge for 2 sections",
+            "FareBufferZoneDescriptionZh": "(去)三洋-五谷王廟、(返)五谷王廟-三洋(建福路)",
+            "FareBufferZoneDescriptionEn": "(Go)Sanyang Company-Wuguwang Temple(Back)Wuguwang Temple-Sanyo(Jianfu Rd.)",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400063900",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10731",
+            "RouteID": "10731",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16181",
+                    "OperatorName": {
+                        "Zh_tw": "欣欣客運"
+                    },
+                    "OperatorCode": "Shin-Shin Bus",
+                    "OperatorNo": "0813"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158439",
+                    "SubRouteID": "158439",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2左",
+                        "En": "G2Left"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0600",
+                    "LastBusTime": "0000",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "0000"
+                },
+                {
+                    "SubRouteUID": "NWT158439",
+                    "SubRouteID": "158439",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2左",
+                        "En": "G2Left"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0600",
+                    "LastBusTime": "0000"
+                },
+                {
+                    "SubRouteUID": "NWT159609",
+                    "SubRouteID": "159609",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2左寵物公車(暫停營運)",
+                        "En": "G2PET"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0600",
+                    "LastBusTime": "0000",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "0000"
+                },
+                {
+                    "SubRouteUID": "NWT159609",
+                    "SubRouteID": "159609",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2左寵物公車(暫停營運)",
+                        "En": "G2PET"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0600",
+                    "LastBusTime": "0000"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "綠2左",
+                "En": "G2Left"
+            },
+            "DepartureStopNameZh": "景美女中",
+            "DepartureStopNameEn": "Jingmei Girls’Senior High School",
+            "DestinationStopNameZh": "中永和",
+            "DestinationStopNameEn": "Zhongyonghe",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0413000270",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10732",
+            "RouteID": "10732",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16181",
+                    "OperatorName": {
+                        "Zh_tw": "欣欣客運"
+                    },
+                    "OperatorCode": "Shin-Shin Bus",
+                    "OperatorNo": "0813"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158436",
+                    "SubRouteID": "158436",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2右",
+                        "En": "G2Right"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2345",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2345"
+                },
+                {
+                    "SubRouteUID": "NWT158436",
+                    "SubRouteID": "158436",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2右",
+                        "En": "G2Right"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2345",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2345"
+                },
+                {
+                    "SubRouteUID": "NWT159538",
+                    "SubRouteID": "159538",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2右寵物公車(暫停營運)",
+                        "En": "G2PET"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2345",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2345"
+                },
+                {
+                    "SubRouteUID": "NWT159538",
+                    "SubRouteID": "159538",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2右寵物公車(暫停營運)",
+                        "En": "G2PET"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2345",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2345"
+                },
+                {
+                    "SubRouteUID": "NWT160467",
+                    "SubRouteID": "160467",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2右景美女中",
+                        "En": "G2 Jingmei Girls High School"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2345",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2345"
+                },
+                {
+                    "SubRouteUID": "NWT160467",
+                    "SubRouteID": "160467",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "綠2右景美女中",
+                        "En": "G2 Jingmei Girls High School"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2345",
+                    "HolidayFirstBusTime": "0530",
+                    "HolidayLastBusTime": "2345"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "綠2右",
+                "En": "G2Right"
+            },
+            "DepartureStopNameZh": "景美女中",
+            "DepartureStopNameEn": "Jingmei Girls’Senior High School",
+            "DestinationStopNameZh": "中永和",
+            "DestinationStopNameEn": "Zhongyonghe",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0413000200",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10753",
+            "RouteID": "10753",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16181",
+                    "OperatorName": {
+                        "Zh_tw": "欣欣客運"
+                    },
+                    "OperatorCode": "Shin-Shin Bus",
+                    "OperatorNo": "0813"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT107530",
+                    "SubRouteID": "107530",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "666華梵大學",
+                        "En": "666 Huafan University"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0648",
+                    "LastBusTime": "1948",
+                    "HolidayFirstBusTime": "0648",
+                    "HolidayLastBusTime": "1928"
+                },
+                {
+                    "SubRouteUID": "NWT107530",
+                    "SubRouteID": "107530",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "666華梵大學",
+                        "En": "666 Huafan University"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0648",
+                    "LastBusTime": "1948",
+                    "HolidayFirstBusTime": "0648",
+                    "HolidayLastBusTime": "1928"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "666華梵大學",
+                "En": "666"
+            },
+            "DepartureStopNameZh": "景福街",
+            "DepartureStopNameEn": "Jingfu St.",
+            "DestinationStopNameZh": "華梵大學",
+            "DestinationStopNameEn": "Huafan University",
+            "TicketPriceDescriptionZh": "三段票",
+            "TicketPriceDescriptionEn": "3 segments",
+            "FareBufferZoneDescriptionZh": "草地尾-石碇高中(二段票緩衝區)；皇帝殿(三段票分段點)",
+            "FareBufferZoneDescriptionEn": "Caodiwei-Shiding High School；Huangdidian",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400066600",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10772",
+            "RouteID": "10772",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16181",
+                    "OperatorName": {
+                        "Zh_tw": "欣欣客運"
+                    },
+                    "OperatorCode": "Shin-Shin Bus",
+                    "OperatorNo": "0813"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158435",
+                    "SubRouteID": "158435",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "249",
+                        "En": "249"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2310",
+                    "HolidayFirstBusTime": "0540",
+                    "HolidayLastBusTime": "2310"
+                },
+                {
+                    "SubRouteUID": "NWT158435",
+                    "SubRouteID": "158435",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "249",
+                        "En": "249"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0530",
+                    "LastBusTime": "2310",
+                    "HolidayFirstBusTime": "0540",
+                    "HolidayLastBusTime": "2310"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "249",
+                "En": "249"
+            },
+            "DepartureStopNameZh": "華夏科技大學",
+            "DepartureStopNameEn": "Hwaxia U. of Technology",
+            "DestinationStopNameZh": "臺北車站",
+            "DestinationStopNameEn": "Taipei Main Station",
+            "TicketPriceDescriptionZh": "二段票",
+            "TicketPriceDescriptionEn": "Charge for 2 sections",
+            "FareBufferZoneDescriptionZh": "(去)智光商職-重慶南路三段(中正橋)、(返)崁頂(中華路)-智光商職",
+            "FareBufferZoneDescriptionEn": "Chih-Kuang Senior Commercial & Industrial Vocational High School-Chongqing S. Road Sec. 3(Zhongzheng Bridge)；Kanding(Zhonghua Rd.)-Chih-Kuang Senior Commercial & Industrial Vocational High School",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400024900",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT10784",
+            "RouteID": "10784",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16181",
+                    "OperatorName": {
+                        "Zh_tw": "欣欣客運"
+                    },
+                    "OperatorCode": "Shin-Shin Bus",
+                    "OperatorNo": "0813"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158646",
+                    "SubRouteID": "158646",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "290副",
+                        "En": "290 Sub"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0600",
+                    "LastBusTime": "2100",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "1930"
+                },
+                {
+                    "SubRouteUID": "NWT158646",
+                    "SubRouteID": "158646",
+                    "OperatorIDs": ["16181"],
+                    "SubRouteName": {
+                        "Zh_tw": "290副",
+                        "En": "290 Sub"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0600",
+                    "LastBusTime": "2100",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "1930"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "290副",
+                "En": "290sub"
+            },
+            "DepartureStopNameZh": "景明街口",
+            "DepartureStopNameEn": "Jingming Rd. Entrance",
+            "DestinationStopNameZh": "溪園路",
+            "DestinationStopNameEn": "Xiyuan Rd.",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400029010",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        },
+        {
+            "RouteUID": "NWT11244",
+            "RouteID": "11244",
+            "HasSubRoutes": true,
+            "Operators": [
+                {
+                    "OperatorID": "16177",
+                    "OperatorName": {
+                        "Zh_tw": "首都客運"
+                    },
+                    "OperatorCode": "CapitalBus",
+                    "OperatorNo": "0913"
+                }
+            ],
+            "AuthorityID": "005",
+            "ProviderID": "015",
+            "SubRoutes": [
+                {
+                    "SubRouteUID": "NWT158644",
+                    "SubRouteID": "158644",
+                    "OperatorIDs": ["16177"],
+                    "SubRouteName": {
+                        "Zh_tw": "62",
+                        "En": "62"
+                    },
+                    "Direction": 0,
+                    "FirstBusTime": "0545",
+                    "LastBusTime": "2300",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "2300"
+                },
+                {
+                    "SubRouteUID": "NWT158644",
+                    "SubRouteID": "158644",
+                    "OperatorIDs": ["16177"],
+                    "SubRouteName": {
+                        "Zh_tw": "62",
+                        "En": "62"
+                    },
+                    "Direction": 1,
+                    "FirstBusTime": "0545",
+                    "LastBusTime": "2300",
+                    "HolidayFirstBusTime": "0600",
+                    "HolidayLastBusTime": "2300"
+                }
+            ],
+            "BusRouteType": 11,
+            "RouteName": {
+                "Zh_tw": "62",
+                "En": "62"
+            },
+            "DepartureStopNameZh": "三重",
+            "DepartureStopNameEn": "Sanchong",
+            "DestinationStopNameZh": "東園",
+            "DestinationStopNameEn": "Dongyuan",
+            "TicketPriceDescriptionZh": "一段票",
+            "TicketPriceDescriptionEn": "1 segments",
+            "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0400006200",
+            "City": "NewTaipei",
+            "CityCode": "NWT",
+            "UpdateTime": "2021-11-18T05:08:09+08:00",
+            "VersionID": 1744
+        }
+    ]
+}
