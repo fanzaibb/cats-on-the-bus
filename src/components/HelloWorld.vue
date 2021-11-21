@@ -2,6 +2,10 @@
 import { getAllCities, getCityBus } from '@/api';
 import { cities, routes } from '@/utils/cities.json';
 import { ref } from 'vue';
+import 'leaflet/dist/leaflet.css';
+
+import L from 'leaflet';
+import { ref, onMounted } from 'vue';
 
 defineProps({
     msg: String
@@ -26,6 +30,23 @@ const selectCity = async city => {
     // const res = await getCityBus(city);
     console.log(busList.value);
 };
+
+onMounted(() => {
+    var mymap = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
+        {
+            attribution:
+                'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'fanzaibb/ckw8m6n2n5tul15o6m50qgefa',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken:
+                'pk.eyJ1IjoiZmFuemFpYmIiLCJhIjoiY2t3OGxzdHF5Y3M2bjJ1cTE3NXpwNThvNyJ9.Ev_Nzbzssxl5qWd-qVW2uQ'
+        }
+    ).addTo(mymap);
+});
 </script>
 
 <template>
@@ -50,6 +71,7 @@ const selectCity = async city => {
             </div>
         </transition>
     </teleport>
+    <div id="map"></div>
 </template>
 
 <style lang="scss" scoped>
@@ -92,5 +114,8 @@ a {
     div {
         height: 32px;
     }
+}
+#map {
+    height: 360px;
 }
 </style>
