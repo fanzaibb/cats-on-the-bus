@@ -39,36 +39,36 @@
         @apply bg-white rounded-2xl mb-4;
         width: 409px;
         box-shadow: 0px 8px 10px rgba(255, 197, 90, 0.25);
-
-        .input-sheet {
-            @apply flex justify-center;
-            height: 73px;
-            input {
-                outline: none;
-                width: 276px;
-                border-color: #eeeeee;
-                height: 36px;
-            }
+    }
+    
+    .input-sheet {
+        @apply flex justify-center;
+        height: 73px;
+        input {
+            outline: none;
+            width: 276px;
+            border-color: #eeeeee;
+            height: 36px;
         }
+    }
 
-        .dial-btn-sheet {
-            @apply grid grid-cols-5 px-8 py-6;
-            height: 283px;
-            .input-btn {
-                @apply rounded-lg ml-2 flex justify-center items-center font-medium;
-                width: 52px;
-                height: 53px;
-                box-shadow: 0px 8px 10px 0px #5b81e240;
-            }
+    .dial-btn-sheet {
+        @apply grid grid-cols-5 px-8 py-6;
+        height: 283px;
+        .input-btn {
+            @apply rounded-lg ml-2 flex justify-center items-center font-medium;
+            width: 52px;
+            height: 53px;
+            box-shadow: 0px 8px 10px 0px #5b81e240;
         }
+    }
 
-        .fav-sheet {
-            @apply overflow-auto;
-            height: 323px;
-            .fav-box {
-                @apply flex px-10 py-2;
-                box-shadow: 0px -0.5px 0px 0px #00000033 inset;
-            }
+    .fav-sheet {
+        @apply overflow-auto;
+        height: 323px;
+        .fav-box {
+            @apply flex px-10 py-2;
+            box-shadow: 0px -0.5px 0px 0px #00000033 inset;
         }
     }
 }
