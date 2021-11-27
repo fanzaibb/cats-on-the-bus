@@ -98,7 +98,9 @@ onMounted(() => {
 <style lang="scss" scoped>
 #map {
     height: 100vh;
-    margin-left: 100px;
+    @media (min-width: 768px) {
+        margin-left: 100px;
+    }
 
     .leaflet-marker-icon {
         animation: moveInBottom 5s ease-out;

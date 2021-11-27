@@ -68,9 +68,9 @@ const textList = [
 <style lang="scss" scoped>
 .sheet-wrapper {
     @apply absolute flex flex-col;
-    top: 12px;
+    top: 112px;
     left: 154px;
-    z-index: 1234;
+    z-index: 800;
     height: 96vh;
     .sheet {
         @apply bg-white rounded-2xl mb-4;

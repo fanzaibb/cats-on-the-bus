@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
     <div class="sheet-wrapper">
@@ -12,7 +11,7 @@
                     width="52"
                 />
                 <label for="from">From</label>
-                <input type="text" placeholder="你的位置" id="from"/>
+                <input type="text" placeholder="你的位置" id="from" />
             </div>
             <div class="dash-path w-full flex justify-end pr-5">
                 <button>
@@ -38,7 +37,7 @@
     @apply absolute flex flex-col;
     top: 12px;
     left: 154px;
-    z-index: 1234;
+    z-index: 800;
     height: 96vh;
     .sheet {
         @apply bg-white rounded-2xl mb-4;
