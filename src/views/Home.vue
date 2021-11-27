@@ -1,3 +1,8 @@
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+</script>
 <template>
     <div class="main font-medium">
         <div class="main-bg-wrapper">
@@ -6,21 +11,21 @@
         </div>
         <div class="bottom-wrapper">
             <div class="btn-group">
-                <div class="btns">
+                <div class="btns" @click="router.push('/bus_search')">
                     <div>
                         <img src="@/assets/bus-icon.svg" alt="" />
                         <p>公車查詢</p>
                     </div>
                 </div>
-                <div class="btns">
+                <div class="btns" @click="router.push('/route_search')">
                     <div>
-                        <img src="@/assets/bus-icon.svg" alt="" />
+                        <img src="@/assets/map-icon.svg" alt="" />
                         <p>路線查詢</p>
                     </div>
                 </div>
-                <div class="btns">
+                <div class="btns" @click="router.push('/nearby_stop')">
                     <div>
-                        <img src="@/assets/bus-icon.svg" alt="" />
+                        <img src="@/assets/sidebar-stop.svg" alt="" width="60" />
                         <p>附近公車</p>
                     </div>
                 </div>
