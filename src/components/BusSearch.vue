@@ -1,6 +1,30 @@
 <script setup>
 import { ref } from 'vue';
+
 const favorite = ref([]);
+
+const textList = [
+    '黃',
+    '綠',
+    1,
+    2,
+    3,
+    '延',
+    '副',
+    4,
+    5,
+    6,
+    '繞',
+    '區',
+    7,
+    8,
+    9,
+    'W',
+    'E',
+    'A',
+    0,
+    '重設'
+];
 </script>
 
 <template>
@@ -14,7 +38,7 @@ const favorite = ref([]);
             </div>
         </div>
         <div class="sheet dial-btn-sheet flex-grow-0">
-            <div v-for="i in 20" :key="i" class="input-btn">red</div>
+            <div v-for="text in textList" :key="text" class="input-btn">{{ text }}</div>
         </div>
         <div v-if="favorite.length !== 0" class="sheet fav-sheet flex-grow relative">
             <p class="pl-10 pt-6 text-left text-gray-6 font-medium">我的最愛</p>
@@ -69,7 +93,7 @@ const favorite = ref([]);
         @apply grid grid-cols-5 px-8 py-6;
         height: 283px;
         .input-btn {
-            @apply rounded-lg ml-2 flex justify-center items-center font-medium;
+            @apply rounded-lg ml-2 flex justify-center items-center font-medium  text-gray-2 cursor-pointer;
             width: 52px;
             height: 53px;
             box-shadow: 0px 8px 10px 0px #5b81e240;

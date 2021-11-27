@@ -1,5 +1,7 @@
 <script setup>
-import Sheet from '@/components/Sheet.vue';
+// import BusSearch from '@/components/BusSearch.vue';
+// import RouteSearch from '@/components/RouteSearch.vue';
+import NearByStop from '@/components/NearByStop.vue';
 import Map from '@/components/Map.vue';
 import { getNearByStops } from '@/api';
 import { cities, routes } from '@/utils/cities.json';
@@ -7,7 +9,6 @@ import { ref, onMounted, reactive } from 'vue';
 import tc from '@/utils/tc.json';
 
 console.log(tc.map(e => e.RouteName));
-const textList = ['繞', '區', '延', '副', '黃', '綠', 'W', 'E', 'A'];
 
 const setNearByStops = async () => {
     const res = await getNearByStops();
@@ -28,17 +29,24 @@ const setNearByStops = async () => {
 
 <template>
     <div id="map-page" class="" style="z-index: 999">
+        <div class="w-16 absolute top-2">
+            <img src="@/assets/logo.svg" alt="" />
+        </div>
         <div>
-            <div class="w-10 h-10 mb-12">
-                <img src="@/assets/map-icon.svg" alt="" />
+            <div class="mb-10">
+                <img src="@/assets/sidebar-stop.svg" alt="" width="60" />
             </div>
-            <div class="w-10 h-10">
-                <img src="@/assets/bus-icon.svg" alt="" />
+            <div class="mb-10">
+                <img src="@/assets/bus-icon.svg" alt="" width="50" class="mx-auto" />
             </div>
-            <button @click="setNearByStops">123</button>
+            <div class="">
+                <img src="@/assets/map-icon.svg" alt="" width="50" class="mx-auto" />
+            </div>
         </div>
     </div>
-    <Sheet />
+    <!-- <BusSearch /> -->
+    <!-- <RouteSearch /> -->
+    <NearByStop />
     <Map />
 </template>
 

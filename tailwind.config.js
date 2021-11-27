@@ -7,12 +7,14 @@ module.exports = {
             white: '#ffffff',
             black: '#000000',
             gray: {
-                2: '#666666'
+                2: '#666666',
+                4: '#cccccc',
+                5: '#EEEEEE'
             },
             blue: {
                 2: '#5B81E2'
-
-            }
+            },
+            orange: '#FFC55A'
         },
         extend: {}
     },
