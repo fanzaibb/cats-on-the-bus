@@ -1,3 +1,8 @@
+<script setup>
+import { ref } from 'vue';
+const favorite = ref([]);
+</script>
+
 <template>
     <div class="sheet-wrapper">
         <div class="sheet input-sheet flex-grow-0">
@@ -11,7 +16,7 @@
         <div class="sheet dial-btn-sheet flex-grow-0">
             <div v-for="i in 20" :key="i" class="input-btn">red</div>
         </div>
-        <div class="sheet fav-sheet flex-grow">
+        <div v-if="favorite.length !== 0" class="sheet fav-sheet flex-grow relative">
             <p class="pl-10 pt-6 text-left text-gray-6 font-medium">我的最愛</p>
             <div v-for="i in 5" :key="i" class="fav-box">
                 <div>
@@ -24,6 +29,13 @@
                 <div class="pt-2">
                     <img src="@/assets/heart.svg" alt="heart" />
                 </div>
+            </div>
+        </div>
+        <div v-else class="sheet fav-sheet flex-grow relative">
+            <div class="no-fav">
+                <img src="@/assets/no-fav-search.svg" alt="no-fav" class="mx-auto" />
+                <p>目前沒有任何收藏的路線</p>
+                <p>將常用的公車路線加入『我的最愛』</p>
             </div>
         </div>
     </div>
@@ -41,7 +53,7 @@
         width: 409px;
         box-shadow: 0px 8px 10px rgba(255, 197, 90, 0.25);
     }
-    
+
     .input-sheet {
         @apply flex justify-center;
         height: 73px;
@@ -67,9 +79,17 @@
     .fav-sheet {
         @apply overflow-auto;
         min-height: 323px;
+        background-color: #ffffff;
+        background-image: url('@/assets/no-fav-bg.svg');
+        background-size: cover;
+        background-position: center;
         .fav-box {
             @apply flex px-10 py-2;
             box-shadow: 0px -0.5px 0px 0px #00000033 inset;
+        }
+        .no-fav {
+            width: 300px;
+            @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-medium break-normal;
         }
     }
 }
