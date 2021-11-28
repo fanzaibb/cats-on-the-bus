@@ -29,9 +29,9 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
                 <img src="@/assets/map-icon.svg" alt="" width="50" class="mx-auto" />
             </div>
         </div>
-        <div class="text-orange text-5xl pt-2 w-16" @click="toggleMenu">&#9776;</div>
+        <div class="menu" @click="toggleMenu">&#9776;</div>
     </div>
-    <teleport to="#app">
+    <teleport to="body">
         <transition name="slide">
             <div v-if="showMMenu" class="m-icons">
                 <div @click="router.push('/nearby_stop')">
@@ -46,8 +46,8 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
                     <img src="@/assets/map-icon.svg" alt="" width="50" />
                     <p>路線查詢</p>
                 </div>
-            </div></transition
-        >
+            </div>
+        </transition>
     </teleport>
     <router-view></router-view>
     <Map />
@@ -58,7 +58,7 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
     z-index: 999;
     @media (max-width: 767px) {
         @apply bg-white w-full absolute top-0 left-0 flex justify-between px-8 pt-3;
-        height: 87px;
+        height: 91px;
         .logo {
             @apply w-16 cursor-pointer;
         }
@@ -71,6 +71,20 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
         .logo {
             @apply w-16 absolute top-2 cursor-pointer;
         }
+        .icons {
+            div {
+                @apply cursor-pointer;
+            }
+        }
+    }
+}
+
+.menu {
+    @media (max-width: 767px) {
+        @apply text-orange text-5xl pt-2 w-16;
+    }
+    @media (min-width: 768px) {
+        display: none;
     }
 }
 
@@ -94,8 +108,4 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
 .slide-enter-from {
     transform: translateX(-100%);
 }
-
-// .slide-leave-to {
-//     transform: translateX(100%);
-// }
 </style>
