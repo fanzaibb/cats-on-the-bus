@@ -1,0 +1,2258 @@
+[
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH178",
+        "StopID": "178",
+        "StopName": {
+            "Zh_tw": "瑞豐站(瑞隆路)",
+            "En": "Rueifong Station (Rueilong Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 1,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:15:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9596",
+        "StopID": "9596",
+        "StopName": {
+            "Zh_tw": "高雄車站(中山路)",
+            "En": "Kaohsiung Main Station(Jhongshan Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "StopSequence": 1,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:25:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH308",
+        "StopID": "308",
+        "StopName": {
+            "Zh_tw": "永豐路口",
+            "En": "Yongfong Rd. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 2,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:15:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9598",
+        "StopID": "9598",
+        "StopName": {
+            "Zh_tw": "六合夜市(大港埔)",
+            "En": "Liouhe Tourist Night Market (Dagangpu)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "StopSequence": 2,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:25:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH402",
+        "StopID": "402",
+        "StopName": {
+            "Zh_tw": "捷運美麗島站",
+            "En": "MRT Formosa Boulevard Station"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "StopSequence": 3,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:27:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH831",
+        "StopID": "831",
+        "StopName": {
+            "Zh_tw": "崗山市場",
+            "En": "Gangshan Market"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 3,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:17:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH832",
+        "StopID": "832",
+        "StopName": {
+            "Zh_tw": "崗山北街口",
+            "En": "Gangshan N. St. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 4,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:17:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9600",
+        "StopID": "9600",
+        "StopName": {
+            "Zh_tw": "捷運中央公園站",
+            "En": "MRT Central Park Station"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "StopSequence": 4,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:28:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH833",
+        "StopID": "833",
+        "StopName": {
+            "Zh_tw": "鐵路機料廠",
+            "En": "Railway Material Plant"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 5,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:19:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9604",
+        "StopID": "9604",
+        "StopName": {
+            "Zh_tw": "城市光廊(捷運中央公園站)",
+            "En": "Urban Spotlight (MRT Central Park Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 0,
+        "StopSequence": 5,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:29:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 0,
+                "IsLastBus": false,
+                "VehicleStopStatus": 1
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH12288",
+        "StopID": "12288",
+        "StopName": {
+            "Zh_tw": "大立百貨(文武二街口)",
+            "En": "Talee Department Store (Wunwu 2nd St. Intersection)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 180,
+        "StopSequence": 6,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:31:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH12822",
+        "StopID": "12822",
+        "StopName": {
+            "Zh_tw": "鳳山工業區(監理所後)",
+            "En": "Fong Shan Industry Park (Behind the Motor Vehicle Office)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 6,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:19:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH837",
+        "StopID": "837",
+        "StopName": {
+            "Zh_tw": "鐵路機廠",
+            "En": "Railway Workshop"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 7,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:20:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH91",
+        "StopID": "91",
+        "StopName": {
+            "Zh_tw": "漢神百貨",
+            "En": "Hanshin Department Store"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 180,
+        "StopSequence": 7,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:34:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH840",
+        "StopID": "840",
+        "StopName": {
+            "Zh_tw": "武慶三路",
+            "En": "Wucing 3rd Rd."
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 8,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:21:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9605",
+        "StopID": "9605",
+        "StopName": {
+            "Zh_tw": "苓雅市場",
+            "En": "Lingya Market"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 300,
+        "StopSequence": 8,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:35:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 300,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH841",
+        "StopID": "841",
+        "StopName": {
+            "Zh_tw": "五塊厝(武慶三路)",
+            "En": "Wukuaicuo (Wucing 3rd Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 9,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:22:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH879",
+        "StopID": "879",
+        "StopName": {
+            "Zh_tw": "成功國小",
+            "En": "Cheng Gong Elementary School"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 360,
+        "StopSequence": 9,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:17:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 360,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH792",
+        "StopID": "792",
+        "StopName": {
+            "Zh_tw": "八五大樓",
+            "En": "85 Sky Tower"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 480,
+        "StopSequence": 10,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:18:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 480,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9535",
+        "StopID": "9535",
+        "StopName": {
+            "Zh_tw": "三信家商",
+            "En": "San Sin High School of Commerce and Home Economics"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 10,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:24:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH152",
+        "StopID": "152",
+        "StopName": {
+            "Zh_tw": "國際商工(輕軌五權國小站)",
+            "En": "KCVS(LRT Wucyuan Elementry School Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 11,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:25:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH909",
+        "StopID": "909",
+        "StopName": {
+            "Zh_tw": "自強三路口(三多四路)",
+            "En": "Zihciang 3rd Rd. Intersection (Sanduo 4th Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 480,
+        "StopSequence": 11,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:19:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 480,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH52",
+        "StopID": "52",
+        "StopName": {
+            "Zh_tw": "五權國小(三多二路)",
+            "En": "Wucyuan Elementry School (Sanduo 2nd Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 12,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:27:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH795",
+        "StopID": "795",
+        "StopName": {
+            "Zh_tw": "大遠百百貨(捷運三多商圈站)",
+            "En": "Far Eastern Department Store (MRT Sandou Shopping District Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 600,
+        "StopSequence": 12,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:20:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 600,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9537",
+        "StopID": "9537",
+        "StopName": {
+            "Zh_tw": "和平路口",
+            "En": "Heping Rd. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 13,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:28:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9620",
+        "StopID": "9620",
+        "StopName": {
+            "Zh_tw": "新光三越(捷運三多商圈站)",
+            "En": "Shin Kong Mitsukoshi Department Store (MRT Sandou Shopping District Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 720,
+        "StopSequence": 13,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:23:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 720,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9539",
+        "StopID": "9539",
+        "StopName": {
+            "Zh_tw": "林德官(三和市場)",
+            "En": "Lindeguan (Sanhe Market)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 14,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:28:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9621",
+        "StopID": "9621",
+        "StopName": {
+            "Zh_tw": "三多三路",
+            "En": "Sanduo 3rd Rd."
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 840,
+        "StopSequence": 14,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:24:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 840,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9540",
+        "StopID": "9540",
+        "StopName": {
+            "Zh_tw": "光華路口(光華夜市)",
+            "En": "Guanghua Rd. Intersection (Guanghua Night Market)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 15,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:30:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9625",
+        "StopID": "9625",
+        "StopName": {
+            "Zh_tw": "仁愛三街口",
+            "En": "Renai 3rd St. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 900,
+        "StopSequence": 15,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:25:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 900,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9541",
+        "StopID": "9541",
+        "StopName": {
+            "Zh_tw": "三多市場(三多三路)",
+            "En": "Sanduo Market (Sanduo 3rd Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 16,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:31:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9668",
+        "StopID": "9668",
+        "StopName": {
+            "Zh_tw": "三多復興路口",
+            "En": "Sanduo Fusing Rd. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 900,
+        "StopSequence": 16,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:26:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 900,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9554",
+        "StopID": "9554",
+        "StopName": {
+            "Zh_tw": "三多復興路口",
+            "En": "Sanduo Fusing Rd. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 17,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:32:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9669",
+        "StopID": "9669",
+        "StopName": {
+            "Zh_tw": "三多市場(三多三路)",
+            "En": "Sanduo Market (Sanduo 3rd Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 1020,
+        "StopSequence": 17,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:27:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1020,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH117",
+        "StopID": "117",
+        "StopName": {
+            "Zh_tw": "光華路口(光華夜市)",
+            "En": "Guanghua Rd. Intersection (Guanghua Night Market)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 1080,
+        "StopSequence": 18,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:29:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1080,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "KHH9555",
+        "StopID": "9555",
+        "StopName": {
+            "Zh_tw": "仁愛三街口",
+            "En": "Renai 3rd St. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "StopSequence": 18,
+        "StopStatus": 1,
+        "NextBusTime": "2021-11-28T16:33:00+08:00",
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH9556",
+        "StopID": "9556",
+        "StopName": {
+            "Zh_tw": "三多三路",
+            "En": "Sanduo 3rd Rd."
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 60,
+        "StopSequence": 19,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:33:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 60,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH9671",
+        "StopID": "9671",
+        "StopName": {
+            "Zh_tw": "林德官(三和市場)",
+            "En": "Lindeguan (Sanhe Market)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 1140,
+        "StopSequence": 19,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:29:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1140,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH126",
+        "StopID": "126",
+        "StopName": {
+            "Zh_tw": "和平路口",
+            "En": "Heping Rd. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 1200,
+        "StopSequence": 20,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:30:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1200,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH9577",
+        "StopID": "9577",
+        "StopName": {
+            "Zh_tw": "新光三越(捷運三多商圈站)",
+            "En": "Shin Kong Mitsukoshi Department Store (MRT Sandou Shopping District Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 60,
+        "StopSequence": 20,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:34:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 60,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "066-V3",
+        "StopUID": "KHH132",
+        "StopID": "132",
+        "StopName": {
+            "Zh_tw": "五權國小(三多二路)",
+            "En": "Wucyuan Elementry School (Sanduo 2nd Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 1260,
+        "StopSequence": 21,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:31:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1260,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH757",
+        "StopID": "757",
+        "StopName": {
+            "Zh_tw": "大遠百百貨(捷運三多商圈站)",
+            "En": "Far Eastern Department Store (MRT Sandou Shopping District Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 180,
+        "StopSequence": 21,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:16:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH555",
+        "StopID": "555",
+        "StopName": {
+            "Zh_tw": "國際商工(輕軌五權國小站)",
+            "En": "KCVS(LRT Wucyuan Elementry School Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 120,
+        "StopSequence": 22,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:33:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 120,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1320,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH907",
+        "StopID": "907",
+        "StopName": {
+            "Zh_tw": "自強三路口(三多四路)",
+            "En": "Zihciang 3rd Rd. Intersection (Sanduo 4th Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 180,
+        "StopSequence": 22,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:18:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH569",
+        "StopID": "569",
+        "StopName": {
+            "Zh_tw": "三信家商",
+            "En": "San Sin High School of Commerce and Home Economics"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 180,
+        "StopSequence": 23,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:34:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1440,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH766",
+        "StopID": "766",
+        "StopName": {
+            "Zh_tw": "八五大樓",
+            "En": "85 Sky Tower"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 240,
+        "StopSequence": 23,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:19:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 240,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH859",
+        "StopID": "859",
+        "StopName": {
+            "Zh_tw": "成功國小",
+            "En": "Cheng Gong Elementary School"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 360,
+        "StopSequence": 24,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:20:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 360,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH896",
+        "StopID": "896",
+        "StopName": {
+            "Zh_tw": "五塊厝(武慶三路)",
+            "En": "Wukuaicuo (Wucing 3rd Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 180,
+        "StopSequence": 24,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:16:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1500,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH897",
+        "StopID": "897",
+        "StopName": {
+            "Zh_tw": "武慶三路",
+            "En": "Wucing 3rd Rd."
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 240,
+        "StopSequence": 25,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:17:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 240,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1560,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH9578",
+        "StopID": "9578",
+        "StopName": {
+            "Zh_tw": "苓雅市場",
+            "En": "Lingya Market"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 420,
+        "StopSequence": 25,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:21:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 420,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH80",
+        "StopID": "80",
+        "StopName": {
+            "Zh_tw": "漢神百貨",
+            "En": "Hanshin Department Store"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 480,
+        "StopSequence": 26,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:22:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 480,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH899",
+        "StopID": "899",
+        "StopName": {
+            "Zh_tw": "鐵路機廠",
+            "En": "Railway Workshop"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 300,
+        "StopSequence": 26,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:18:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 300,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1620,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH12823",
+        "StopID": "12823",
+        "StopName": {
+            "Zh_tw": "鳳山工業區(監理所後)",
+            "En": "Fong Shan Industry Park (Behind the Motor Vehicle Office)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 300,
+        "StopSequence": 27,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:18:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 300,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1680,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH2595",
+        "StopID": "2595",
+        "StopName": {
+            "Zh_tw": "大立百貨",
+            "En": "Talee Department Store"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 600,
+        "StopSequence": 27,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:25:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 600,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH12287",
+        "StopID": "12287",
+        "StopName": {
+            "Zh_tw": "大立百貨(文武二街口)",
+            "En": "Talee Department Store (Wunwu 2nd St. Intersection)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 660,
+        "StopSequence": 28,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:25:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 660,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH903",
+        "StopID": "903",
+        "StopName": {
+            "Zh_tw": "鐵路機料廠",
+            "En": "Railway Material Plant"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 360,
+        "StopSequence": 28,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:18:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 360,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1680,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH905",
+        "StopID": "905",
+        "StopName": {
+            "Zh_tw": "崗山北街口",
+            "En": "Gangshan N. St. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 420,
+        "StopSequence": 29,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:20:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 420,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1740,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "183-FT",
+        "StopUID": "KHH9579",
+        "StopID": "9579",
+        "StopName": {
+            "Zh_tw": "城市光廊(捷運中央公園站)",
+            "En": "Urban Spotlight (MRT Central Park Station)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 720,
+        "StopSequence": 29,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:27:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 720,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH906",
+        "StopID": "906",
+        "StopName": {
+            "Zh_tw": "崗山市場",
+            "En": "Gangshan Market"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 480,
+        "StopSequence": 30,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:21:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 480,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1860,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "057-V3",
+        "StopUID": "KHH9592",
+        "StopID": "9592",
+        "StopName": {
+            "Zh_tw": "捷運中央公園站",
+            "En": "MRT Central Park Station"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 0,
+        "StopSequence": 30,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:30:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "057-V3",
+                "EstimateTime": 0,
+                "IsLastBus": false,
+                "VehicleStopStatus": 1
+            },
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 900,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH384",
+        "StopID": "384",
+        "StopName": {
+            "Zh_tw": "永豐路口",
+            "En": "Yongfong Rd. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 600,
+        "StopSequence": 31,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:22:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 600,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1920,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "057-V3",
+        "StopUID": "KHH9593",
+        "StopID": "9593",
+        "StopName": {
+            "Zh_tw": "捷運美麗島站",
+            "En": "MRT Formosa Boulevard Station"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 120,
+        "StopSequence": 31,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:31:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "057-V3",
+                "EstimateTime": 120,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 960,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "188-FT",
+        "StopUID": "KHH288",
+        "StopID": "288",
+        "StopName": {
+            "Zh_tw": "瑞豐站(瑞隆路)",
+            "En": "Rueifong Station (Rueilong Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 1,
+        "EstimateTime": 660,
+        "StopSequence": 32,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:23:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "188-FT",
+                "EstimateTime": 660,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "066-V3",
+                "EstimateTime": 1980,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "057-V3",
+        "StopUID": "KHH9594",
+        "StopID": "9594",
+        "StopName": {
+            "Zh_tw": "六合夜市(大港埔)",
+            "En": "Liouhe Tourist Night Market (Dagangpu)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 180,
+        "StopSequence": 32,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:33:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "057-V3",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 1140,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "057-V3",
+        "StopUID": "KHH674",
+        "StopID": "674",
+        "StopName": {
+            "Zh_tw": "中山一路口",
+            "En": "Jhongshan 1st Rd. Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 180,
+        "StopSequence": 33,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:34:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "057-V3",
+                "EstimateTime": 180,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 1200,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "057-V3",
+        "StopUID": "KHH11354",
+        "StopID": "11354",
+        "StopName": {
+            "Zh_tw": "建國林森路口",
+            "En": "Jianguo Linsen Intersection"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 360,
+        "StopSequence": 34,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:16:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "057-V3",
+                "EstimateTime": 360,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 1320,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    },
+    {
+        "PlateNumb": "057-V3",
+        "StopUID": "KHH9595",
+        "StopID": "9595",
+        "StopName": {
+            "Zh_tw": "高雄車站(中山路)",
+            "En": "Kaohsiung Main Station(Jhongshan Rd.)"
+        },
+        "RouteUID": "KHH100",
+        "RouteID": "100",
+        "RouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "SubRouteUID": "KHH100",
+        "SubRouteID": "100",
+        "SubRouteName": {
+            "Zh_tw": "100百貨幹線",
+            "En": "100 "
+        },
+        "Direction": 0,
+        "EstimateTime": 480,
+        "StopSequence": 35,
+        "StopStatus": 0,
+        "NextBusTime": "2021-11-28T16:19:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "057-V3",
+                "EstimateTime": 480,
+                "IsLastBus": false
+            },
+            {
+                "PlateNumb": "183-FT",
+                "EstimateTime": 1440,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2021-11-28T16:16:06+08:00",
+        "UpdateTime": "2021-11-28T16:16:17+08:00"
+    }
+]

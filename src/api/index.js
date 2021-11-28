@@ -9,17 +9,33 @@ export function getAllCities() {
 
 export function getCityBus(data) {
     return request({
-        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/Route/City/Taichung?$format=JSON`,
+        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/Route/City/Kaohsiung?$format=JSON`,
         method: 'get',
         data
     });
 }
 
-export function getArrivalTime(data) {
+export function getArrivalTime() {
+    const params = {
+        $format: 'JSON',
+        $filter: "RouteUID eq 'KHH100'",
+        $orderby: 'StopSequence asc'
+    };
     return request({
-        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/EstimatedTimeOfArrival/Streaming/City/${data.City}/${data.RouteName}`,
+        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/EstimatedTimeOfArrival/City/Kaohsiung`,
         method: 'get',
-        data
+        params
+    });
+}
+
+export function getStopInfo() {
+    const params = {
+        $format: 'JSON'
+    };
+    return request({
+        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/StopOfRoute/City/Kaohsiung/100`,
+        method: 'get',
+        params
     });
 }
 
@@ -30,3 +46,5 @@ export function getNearByStops(data) {
         data
     });
 }
+
+// https://ptx.transportdata.tw/MOTC/v2/Bus/StopOfRoute/City/Kaohsiung

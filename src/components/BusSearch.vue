@@ -1,65 +1,64 @@
 <script setup>
 import Select from '@/components/Select.vue';
-import { ref } from 'vue';
+import { routes } from '@/utils/cities.json';
+import { ref, reactive } from 'vue';
 import { useRouter } from 'vue-router';
+import { useStore } from 'vuex';
 
 const router = useRouter();
+const store = useStore();
+const allBus = routes.map(e => e.RouteName.Zh_tw);
 
-const favorite = ref([1]);
+const favorite = ref([]);
+const input = ref('');
+const searchResult = reactive({});
 
-const textList = [
-    '黃',
-    '綠',
-    1,
-    2,
-    3,
-    '延',
-    '副',
-    4,
-    5,
-    6,
-    '繞',
-    '區',
-    7,
-    8,
-    9,
-    'W',
-    'E',
-    'A',
-    0,
-    '重設'
-];
+const searchBus = async () => {
+    if (input.value.length === 0) return;
+    await store.dispatch('getRoute', input.value);
+    router.push('/live_route')
+};
 </script>
 
 <template>
     <div class="sheet-wrapper">
         <div class="sheet input-sheet flex-grow-0">
-            <div>
+            <button @click="searchBus">
                 <img src="@/assets/search.svg" alt="search icon" class="pt-5 pr-4" width="60" />
-            </div>
+            </button>
             <div class="pt-4">
-                <input type="text" class="border-b-2" placeholder="請輸入公車號碼" />
+                <input
+                    v-model.trim="input"
+                    type="text"
+                    class="border-b-2"
+                    placeholder="請輸入公車號碼"
+                    @keyup.enter="searchBus"
+                />
             </div>
         </div>
         <div class="m-input-sheet">
             <Select />
             <div class="m-input">
-                <img
-                    src="@/assets/search.svg"
-                    alt="search icon"
-                    class="inline-block pt-1"
-                    width="33"
-                />
+                <button @click="searchBus">
+                    <img
+                        src="@/assets/search.svg"
+                        alt="search icon"
+                        class="inline-block pt-1"
+                        width="33"
+                    />
+                </button>
                 <input
+                    v-model.trim="input"
                     type="text"
                     class="border-b-2 ml-4 inline-block"
                     placeholder="請輸入公車號碼"
+                    @keyup.enter="searchBus"
                 />
             </div>
         </div>
-        <div class="sheet dial-btn-sheet flex-grow-0">
+        <!-- <div class="sheet dial-btn-sheet flex-grow-0">
             <div v-for="text in textList" :key="text" class="input-btn">{{ text }}</div>
-        </div>
+        </div> -->
         <div v-if="favorite.length !== 0" class="sheet fav-sheet flex-grow relative">
             <p class="pl-10 pt-6 text-left text-gray-6 font-medium">我的最愛</p>
             <div v-for="i in 5" :key="i" class="fav-box" @click="router.push('/live_route')">
@@ -118,6 +117,9 @@ const textList = [
                 border-color: #eeeeee;
                 height: 36px;
             }
+        }
+        button:active {
+            transform: scale(0.8);
         }
     }
 

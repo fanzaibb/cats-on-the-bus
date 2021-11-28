@@ -2,10 +2,22 @@
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { getNearByStops } from '@/api';
-import { ref, onMounted, reactive } from 'vue';
+import { ref, onMounted, reactive, computed } from 'vue';
+import { useStore } from 'vuex';
+import mockInfo from '@/store/mockInfo.json';
 
+const store = useStore();
+const info = computed(() => store.state.stopInfo?.forward);
 const pos = ref([]);
+
+const test = mockInfo[0].Stops;
+const lineList = mockInfo[0].Stops.map(e => [
+    e.StopPosition.PositionLon,
+    e.StopPosition.PositionLat
+]);
+let lineLayer;
 var x = document.getElementById('demo');
+
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -25,7 +37,6 @@ function showPosition(position) {
 }
 
 let mymap;
-
 let myIcon = reactive(
     L.icon({
         iconUrl: 'src/assets/locate.svg',
@@ -40,16 +51,54 @@ let myIcon = reactive(
 );
 let nearByIcon = reactive(
     L.icon({
-        iconUrl: 'src/assets/locate-bus.svg',
-        iconSize: [38, 95],
+        iconUrl: 'src/assets/locate-dot.svg',
+        iconSize: [30, 125],
         iconAnchor: [20, 54],
         popupAnchor: [-3, -76],
         riseOnHover: true,
-        shadowUrl: 'src/assets/locate-bus2.svg',
-        shadowSize: [68, 95],
-        shadowAnchor: [35, 54]
+        // shadowUrl: 'src/assets/locate-bus2.svg',
+        // shadowSize: [68, 95],
+        // shadowAnchor: [35, 54]
     })
 );
+
+const myLines = [
+    {
+        type: 'LineString',
+        coordinates: lineList
+    }
+];
+
+var geojsonFeature = {
+    type: 'Feature',
+    properties: {
+        name: 'Coors Field',
+        amenity: 'Baseball Stadium',
+        popupContent: 'This is where the Rockies play!'
+    },
+    geometry: {
+        type: 'LineString',
+        coordinates: lineList
+    }
+};
+
+const myStyle = {
+    color: '#FFD588',
+    weight: 4,
+    opacity: 1
+};
+
+const showAllStops = list => {
+    list.forEach(e => {
+        // console.log(e);
+        L.marker([e.StopPosition.PositionLat, e.StopPosition.PositionLon], {
+            icon: nearByIcon
+        })
+            .addTo(mymap)
+            .bindTooltip(e.StopName.Zh_tw);
+        // .openTooltip();
+    });
+};
 
 const setNearByStops = async () => {
     const res = await getNearByStops();
@@ -58,10 +107,8 @@ const setNearByStops = async () => {
         if (index < 5) {
             L.marker([e.StopPosition.PositionLat, e.StopPosition.PositionLon], {
                 icon: nearByIcon
-            })
-                .addTo(mymap)
-                .bindTooltip(e.StopName.Zh_tw)
-                .openTooltip();
+            }).addTo(mymap);
+            // .bindTooltip(e.StopName.Zh_tw)
             console.log(e);
         }
 
@@ -72,7 +119,7 @@ const setNearByStops = async () => {
     });
 };
 onMounted(() => {
-    mymap = L.map('map').setView([24.9966271, 121.5041027], 16);
+    mymap = L.map('map').setView([22.606123, 120.338443], 14);
     L.tileLayer(
         'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
         {
@@ -86,8 +133,25 @@ onMounted(() => {
                 'pk.eyJ1IjoiZmFuemFpYmIiLCJhIjoiY2t3OGxzdHF5Y3M2bjJ1cTE3NXpwNThvNyJ9.Ev_Nzbzssxl5qWd-qVW2uQ'
         }
     ).addTo(mymap);
-    L.marker([24.9966271, 121.5041027], { icon: myIcon }).addTo(mymap);
+
+    mymap.zoomControl.setPosition('bottomright');
+
+
+    lineLayer = L.geoJSON(myLines, {
+        style: myStyle
+    }).addTo(mymap);
+
+    // L.geoJSON(geojsonFeature, {
+    //     style: myStyle
+    // }).addTo(mymap);
+
+    // lineLayer = L.geoJSON(geojsonFeature).addTo(mymap);
+    // lineLayer.addData(geojsonFeature);
+
+    mymap.fitBounds(lineLayer.getBounds());
+    // L.marker([24.9966271, 121.5041027], { icon: myIcon }).addTo(mymap);
     // marker.bindTooltip("my tooltip text").openTooltip();
+    showAllStops(test);
 });
 </script>
 
@@ -121,6 +185,12 @@ onMounted(() => {
     }
     :deep(.stop-name-tag) {
         // bottom: 32px !important;
+    }
+
+    @media (max-width: 767px) {
+        :deep(.leaflet-top) {
+            display: none;
+        }
     }
 }
 </style>
