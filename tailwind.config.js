@@ -8,6 +8,7 @@ module.exports = {
             black: '#000000',
             gray: {
                 2: '#666666',
+                3: '#999999',
                 4: '#cccccc',
                 5: '#EEEEEE'
             },

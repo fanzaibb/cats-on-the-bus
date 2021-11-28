@@ -1,7 +1,11 @@
 <script setup>
+import Select from '@/components/Select.vue';
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
-const favorite = ref([]);
+const router = useRouter();
+
+const favorite = ref([1]);
 
 const textList = [
     '黃',
@@ -37,15 +41,28 @@ const textList = [
                 <input type="text" class="border-b-2" placeholder="請輸入公車號碼" />
             </div>
         </div>
+        <div class="m-input-sheet">
+            <Select />
+            <div class="m-input">
+                <img
+                    src="@/assets/search.svg"
+                    alt="search icon"
+                    class="inline-block pt-1"
+                    width="33"
+                />
+                <input
+                    type="text"
+                    class="border-b-2 ml-4 inline-block"
+                    placeholder="請輸入公車號碼"
+                />
+            </div>
+        </div>
         <div class="sheet dial-btn-sheet flex-grow-0">
             <div v-for="text in textList" :key="text" class="input-btn">{{ text }}</div>
         </div>
         <div v-if="favorite.length !== 0" class="sheet fav-sheet flex-grow relative">
             <p class="pl-10 pt-6 text-left text-gray-6 font-medium">我的最愛</p>
-            <div v-for="i in 5" :key="i" class="fav-box">
-                <div>
-                    <img src="@/assets/fav-bus.svg" alt="favorite bus routes" />
-                </div>
+            <div v-for="i in 5" :key="i" class="fav-box" @click="router.push('/live_route')">
                 <div class="text-left text-sm pl-4 font-medium" style="width: 241px">
                     <p class="text-blue-2">11</p>
                     <p>台大－新店</p>
@@ -55,7 +72,7 @@ const textList = [
                 </div>
             </div>
         </div>
-        <div v-else class="sheet fav-sheet flex-grow relative">
+        <div v-else class="sheet no-fav-sheet flex-grow relative">
             <div class="no-fav">
                 <img src="@/assets/no-fav-search.svg" alt="no-fav" class="mx-auto" />
                 <p>目前沒有任何收藏的路線</p>
@@ -68,28 +85,69 @@ const textList = [
 <style lang="scss" scoped>
 .sheet-wrapper {
     @apply absolute flex flex-col;
-    top: 112px;
-    left: 154px;
     z-index: 800;
-    height: 96vh;
+
+    @media (max-width: 767px) {
+        @apply w-full;
+        top: 32px;
+    }
+    @media (min-width: 768px) {
+        top: 32px;
+        left: 154px;
+        height: 96vh;
+    }
     .sheet {
         @apply bg-white rounded-2xl mb-4;
-        width: 409px;
+
+        @media (min-width: 768px) {
+            width: 409px;
+        }
         box-shadow: 0px 8px 10px rgba(255, 197, 90, 0.25);
     }
 
     .input-sheet {
-        @apply flex justify-center;
-        height: 73px;
-        input {
-            outline: none;
-            width: 276px;
-            border-color: #eeeeee;
-            height: 36px;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            @apply flex justify-center;
+            height: 73px;
+            input {
+                outline: none;
+                width: 276px;
+                border-color: #eeeeee;
+                height: 36px;
+            }
+        }
+    }
+
+    .m-input-sheet {
+        @media (max-width: 767px) {
+            @apply flex justify-center absolute w-full;
+            z-index: 300;
+            top: 64px;
+            div {
+                box-shadow: 0px 8px 10px rgba(255, 197, 90, 0.25);
+            }
+            input {
+                @apply font-light;
+                outline: none;
+                width: 158px;
+                border-color: #eeeeee;
+            }
+            .m-input {
+                @apply bg-white rounded-lg ml-2 px-2;
+            }
+        }
+        @media (min-width: 768px) {
+            display: none;
         }
     }
 
     .dial-btn-sheet {
+        @media (max-width: 767px) {
+            display: none;
+        }
         @apply grid grid-cols-5 px-8 py-6;
         height: 283px;
         .input-btn {
@@ -101,19 +159,48 @@ const textList = [
     }
 
     .fav-sheet {
-        @apply overflow-auto;
-        min-height: 323px;
-        background-color: #ffffff;
-        background-image: url('@/assets/no-fav-bg.svg');
-        background-size: cover;
-        background-position: center;
+        @apply bg-white;
         .fav-box {
-            @apply flex px-10 py-2;
+            @apply flex px-6 py-2 justify-between cursor-pointer;
             box-shadow: 0px -0.5px 0px 0px #00000033 inset;
         }
-        .no-fav {
-            width: 300px;
-            @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-medium break-normal;
+        @media (max-width: 767px) {
+            @apply overflow-auto absolute w-full top-10 pt-14;
+            min-height: calc(100vh - 64px);
+            z-index: 298;
+        }
+
+        @media (min-width: 768px) {
+            @apply overflow-auto;
+            min-height: 323px;
+        }
+    }
+    .no-fav-sheet {
+        @media (max-width: 767px) {
+            @apply overflow-auto;
+            min-height: calc(100vh - 32px);
+            background-color: #ffffff;
+            background-image: url('@/assets/no-fav-bg.svg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            .no-fav {
+                width: 300px;
+                @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-medium break-normal;
+            }
+        }
+
+        @media (min-width: 768px) {
+            @apply overflow-auto;
+            min-height: 323px;
+            background-color: #ffffff;
+            background-image: url('@/assets/no-fav-bg.svg');
+            background-size: cover;
+            background-position: center;
+            .no-fav {
+                width: 300px;
+                @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-medium break-normal;
+            }
         }
     }
 }

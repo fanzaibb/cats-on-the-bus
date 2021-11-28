@@ -5,44 +5,39 @@ import { ref } from 'vue';
 import tc from '@/utils/tc.json';
 
 console.log(tc.map(e => e.RouteName));
-const cityList = ref([]);
-const busList = ref([]);
-const toggle = ref(false);
-const chooseVal = ref('選擇城市');
 
-const getCities = async () => {
-    // const res = await getAllCities();
-    cityList.value = cities;
-};
-getCities();
+const list = ['綠', '延', '副', '繞', '區', 'W', 'E', 'A'];
+const toggle = ref(false);
+const chooseVal = ref('路線名');
 
 const switchToggle = () => (toggle.value = !toggle.value);
-const selectCity = async city => {
-    chooseVal.value = city.CityName;
-    busList.value = routes;
-    // const res = await getCityBus();
-    // console.log(busList.value);
-    // console.log(res);
+const selectText = async text => {
+    chooseVal.value = text;
 };
-selectCity(1);
 </script>
 
 <template>
     <div id="select" class="input-wrapper pointer" @click="switchToggle">
-        <div style="display: flex">
-            <slot name="title">{{ chooseVal }}</slot>
+        <div class="flex">
+            <div
+                class="w-12"
+                :class="chooseVal !== '路線名' ? 'text-black' : 'text-gray-4'"
+            >
+                {{ chooseVal }}
+            </div>
+            <img src="@/assets/arrow.svg" alt="arrow" class="ease" :class="{ expand: toggle }" />
         </div>
     </div>
     <teleport v-if="toggle" to="#select">
-        <transition id="option">
+        <transition id="option" name="slide">
             <div v-show="toggle" class="option-wrapper">
                 <div
-                    v-for="city in cityList"
-                    :key="city.CityName"
+                    v-for="text in list"
+                    :key="text"
                     class="select-btn pointer"
-                    @click="selectCity(city)"
+                    @click="selectText(text)"
                 >
-                    {{ city.CityName }}
+                    {{ text }}
                 </div>
             </div>
         </transition>
@@ -51,46 +46,33 @@ selectCity(1);
 
 <style lang="scss" scoped>
 #select {
-    position: absolute;
-    top: 0;
-    left: 100px;
-    z-index: 100;
+}
+
+.input-wrapper {
+    @apply bg-white rounded-lg mr-1 pt-2 pl-1;
+    width: 72px;
+    box-shadow: 0px 8px 10px rgba(255, 197, 90, 0.25);
 }
 
 .expand {
     transform: rotate(180deg);
-}
-
-.select-btn {
-    &:hover {
-        color: gray;
-        background-color: pink;
-        border-radius: 20px;
-        padding-top: 4px;
-    }
-}
-
-.input-wrapper {
-    position: relative;
-    width: 260px;
-    margin: 23px 0;
-    border: 1px solid goldenrod;
+    transition: all 0.3s ease;
 }
 
 .option-wrapper {
+    @apply bg-orange flex flex-wrap p-4 pb-2;
     position: absolute;
-    width: 100px;
-    height: 200px;
-    overflow: auto;
-    top: 30px;
-    left: 20px;
-    z-index: 9999;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    background-color: white;
+    width: 311px;
+    min-height: 92px;
+    top: 46px;
+    left: 56px;
+    z-index: 500;
     border-radius: 20px;
-    div {
-        height: 32px;
+    .select-btn {
+        @apply bg-white text-orange rounded-xl px-2 py-1 text-sm;
+        min-width: 44px;
+        height: 25px;
+        margin: 0 10px 10px 0;
     }
 }
 </style>
