@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import store from '@/store';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -14,9 +15,9 @@ const router = createRouter({
                     path: 'bus_search',
                     component: () => import('@/components/BusSearch.vue')
                 },
-                { 
+                {
                     path: 'nearby_stop',
-                    component: () => import('@/components/NearbyStop.vue') 
+                    component: () => import('@/components/NearbyStop.vue')
                 },
                 {
                     path: 'route_search',
@@ -36,6 +37,7 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from, next) => {
+    store.dispatch('setPath', to.path);
     next();
 });
 

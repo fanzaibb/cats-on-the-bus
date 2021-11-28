@@ -2,12 +2,16 @@
 import Map from '@/components/Map.vue';
 import { getNearByStops } from '@/api';
 import { cities, routes } from '@/utils/cities.json';
-import { ref, onMounted, reactive } from 'vue';
+import { ref, onMounted, reactive, computed } from 'vue';
 import { useRouter } from 'vue-router';
+import { useStore } from 'vuex';
 import tc from '@/utils/tc.json';
 
 console.log(tc.map(e => e.RouteName));
 const router = useRouter();
+const store = useStore();
+
+const path = computed(() => store.state.path);
 
 const showMMenu = ref(false);
 const toggleMenu = () => (showMMenu.value = !showMMenu.value);
@@ -19,13 +23,24 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
             <img src="@/assets/logo.svg" alt="" />
         </div>
         <div class="icons">
-            <div class="mb-10" @click="router.push('/nearby_stop')">
+            <div
+                class="mb-10"
+                :class="{ active: path === '/nearby_stop' }"
+                @click="router.push('/nearby_stop')"
+            >
                 <img src="@/assets/sidebar-stop.svg" alt="" width="60" />
             </div>
-            <div class="mb-10" @click="router.push('/bus_search')">
+            <div
+                class="mb-10"
+                :class="{ active: path === '/bus_search' }"
+                @click="router.push('/bus_search')"
+            >
                 <img src="@/assets/bus-icon.svg" alt="" width="50" class="mx-auto" />
             </div>
-            <div @click="router.push('/route_search')">
+            <div
+                :class="{ active: path === '/route_search' }"
+                @click="router.push('/route_search')"
+            >
                 <img src="@/assets/map-icon.svg" alt="" width="50" class="mx-auto" />
             </div>
         </div>
@@ -99,6 +114,15 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
         }
     }
 }
+
+.active {
+    @apply relative;
+    &::after {
+        @apply rounded-full w-2 h-2 bg-red absolute -bottom-4 left-7;
+        content: '';
+    }
+}
+
 .slide-leave-active,
 .slide-enter-active {
     transition: all 0.9s ease;
