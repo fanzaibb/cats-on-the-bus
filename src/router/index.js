@@ -21,6 +21,10 @@ const router = createRouter({
                 {
                     path: 'route_search',
                     component: () => import('@/components/RouteSearch.vue')
+                },
+                {
+                    path: 'live_route',
+                    component: () => import('@/components/LiveRoute.vue')
                 }
             ]
         },
