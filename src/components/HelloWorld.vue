@@ -1,13 +1,13 @@
 <script setup>
 import Map from '@/components/Map.vue';
-import { getNearByStops } from '@/api';
 import { cities, routes } from '@/utils/cities.json';
 import { ref, onMounted, reactive, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useStore } from 'vuex';
 import tc from '@/utils/tc.json';
 
-console.log(tc.map(e => e.RouteName));
+// console.log(tc.map(e => e.RouteName));
+
 const router = useRouter();
 const store = useStore();
 
@@ -84,7 +84,7 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
     @media (min-width: 768px) {
         @apply bg-white w-24 h-full absolute top-0 left-0 flex items-center justify-center;
         .logo {
-            @apply w-16 absolute top-2 cursor-pointer;
+            @apply w-16 absolute top-2 cursor-pointer pt-4;
         }
         .icons {
             div {

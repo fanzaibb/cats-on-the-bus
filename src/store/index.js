@@ -10,7 +10,8 @@ export default createStore({
         currentCity: {},
         allBus: [],
         routeData: [],
-        stopInfo: {}
+        stopInfo: {},
+        location: []
     },
     mutations: {
         SET_PATH(state, path) {
@@ -30,7 +31,10 @@ export default createStore({
         },
         SET_SELECT(state, value) {
             state.openSelect = value;
-        }
+        },
+        SET_LOCATION(state, arr) {
+            state.location = arr;
+        },
     },
     actions: {
         setPath({ commit }, path) {
@@ -38,6 +42,9 @@ export default createStore({
         },
         setSelect({ commit }, value) {
             commit('SET_SELECT', value);
+        },
+        setLocation({ commit }, arr) {
+            commit('SET_LOCATION', arr);
         },
         async getAllBus({ state, commit }, city) {
             commit('SET_CITY', city);

@@ -1,8 +1,7 @@
 <script setup>
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { getNearByStops } from '@/api';
-import { ref, onMounted, reactive, computed } from 'vue';
+import { ref, onMounted, reactive, computed, watch, watchEffect } from 'vue';
 import { useStore } from 'vuex';
 import mockInfo from '@/store/mockInfo.json';
 
@@ -15,26 +14,23 @@ const lineList = mockInfo[0].Stops.map(e => [
     e.StopPosition.PositionLon,
     e.StopPosition.PositionLat
 ]);
+const map = ref(null);
 let lineLayer;
-var x = document.getElementById('demo');
+const location = computed(() => {
+    if (store.state.location.length !== 0) map.value.classList.remove('show-blur');
+    return store.state.location;
+});
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = 'Geolocation is not supported by this browser.';
+watchEffect(
+    () => {
+        if (location.value.length !== 0) {
+            showAllStops(test);
+            drawRouteLine(lineList)
+            // setNearByStops();
+        }
+        // stop();
     }
-}
-
-function showPosition(position) {
-    console.log(position);
-    pos.value = [position.coords.latitude, position.coords.longitude];
-    console.log(pos.value);
-    console.log(mymap);
-    mymap.setView(pos.value, 13);
-    // x.innerHTML =
-    //     'Latitude: ' + position.coords.latitude + '<br>Longitude: ' + position.coords.longitude;
-}
+);
 
 let mymap;
 let myIcon = reactive(
@@ -55,42 +51,15 @@ let nearByIcon = reactive(
         iconSize: [30, 125],
         iconAnchor: [20, 54],
         popupAnchor: [-3, -76],
-        riseOnHover: true,
+        riseOnHover: true
         // shadowUrl: 'src/assets/locate-bus2.svg',
         // shadowSize: [68, 95],
         // shadowAnchor: [35, 54]
     })
 );
 
-const myLines = [
-    {
-        type: 'LineString',
-        coordinates: lineList
-    }
-];
-
-var geojsonFeature = {
-    type: 'Feature',
-    properties: {
-        name: 'Coors Field',
-        amenity: 'Baseball Stadium',
-        popupContent: 'This is where the Rockies play!'
-    },
-    geometry: {
-        type: 'LineString',
-        coordinates: lineList
-    }
-};
-
-const myStyle = {
-    color: '#FFD588',
-    weight: 4,
-    opacity: 1
-};
-
 const showAllStops = list => {
     list.forEach(e => {
-        // console.log(e);
         L.marker([e.StopPosition.PositionLat, e.StopPosition.PositionLon], {
             icon: nearByIcon
         })
@@ -101,8 +70,7 @@ const showAllStops = list => {
 };
 
 const setNearByStops = async () => {
-    const res = await getNearByStops();
-    res.forEach((e, index) => {
+    mockInfo.forEach((e, index) => {
         // 待補：只顯示不同定位的最多五筆
         if (index < 5) {
             L.marker([e.StopPosition.PositionLat, e.StopPosition.PositionLon], {
@@ -118,6 +86,27 @@ const setNearByStops = async () => {
         //     .openOn(mymap);
     });
 };
+
+const drawRouteLine = lineList => {
+    lineLayer = L.geoJSON(
+        {
+            type: 'LineString',
+            coordinates: lineList
+        },
+        {
+            style: {
+                color: '#FFD588',
+                weight: 4,
+                opacity: 1
+            }
+        }
+    ).addTo(mymap);
+    mymap.fitBounds(lineLayer.getBounds());
+};
+
+
+const showBlur = computed(() => location.value.length === 0);
+
 onMounted(() => {
     mymap = L.map('map').setView([22.606123, 120.338443], 14);
     L.tileLayer(
@@ -133,35 +122,25 @@ onMounted(() => {
                 'pk.eyJ1IjoiZmFuemFpYmIiLCJhIjoiY2t3OGxzdHF5Y3M2bjJ1cTE3NXpwNThvNyJ9.Ev_Nzbzssxl5qWd-qVW2uQ'
         }
     ).addTo(mymap);
-
     mymap.zoomControl.setPosition('bottomright');
 
-
-    lineLayer = L.geoJSON(myLines, {
-        style: myStyle
-    }).addTo(mymap);
-
-    // L.geoJSON(geojsonFeature, {
-    //     style: myStyle
-    // }).addTo(mymap);
-
-    // lineLayer = L.geoJSON(geojsonFeature).addTo(mymap);
-    // lineLayer.addData(geojsonFeature);
-
-    mymap.fitBounds(lineLayer.getBounds());
     // L.marker([24.9966271, 121.5041027], { icon: myIcon }).addTo(mymap);
     // marker.bindTooltip("my tooltip text").openTooltip();
-    showAllStops(test);
+    // showAllStops(test);
 });
 </script>
 
 <template>
-    <div id="map"></div>
+    <div ref="map" id="map" class="show-blur"></div>
 </template>
 
 <style lang="scss" scoped>
 #map {
     height: 100vh;
+    &.show-blur {
+        background: hsla(0, 0%, 100%, 0.3);
+        filter: blur(3px);
+    }
     @media (min-width: 768px) {
         margin-left: 100px;
     }

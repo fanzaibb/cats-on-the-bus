@@ -95,7 +95,7 @@ const showRouteInfo = async bus => {
 
 <style lang="scss" scoped>
 .sheet-wrapper {
-    @apply absolute flex flex-col;
+    @apply absolute;
     z-index: 800;
 
     @media (max-width: 767px) {
@@ -190,6 +190,7 @@ const showRouteInfo = async bus => {
         @media (min-width: 768px) {
             @apply overflow-auto;
             min-height: 323px;
+            max-height: calc(100vh - 133px);
         }
     }
     .no-fav-sheet {

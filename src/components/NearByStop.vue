@@ -1,4 +1,29 @@
 <script setup>
+// import { getNearByStops } from '@/api';
+import { useStore } from 'vuex';
+import { ref } from 'vue';
+
+const store = useStore();
+const pos = ref([]);
+var x = document.getElementById('demo');
+const getLocation = () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = 'Geolocation is not supported by this browser.';
+    }
+};
+
+const showPosition = async position => {
+    pos.value = [position.coords.longitude, position.coords.latitude];
+    store.dispatch('setLocation', pos.value);
+    // const res = await getNearByStops(pos.value);
+    // mymap.setView(pos.value, 13);
+    // x.innerHTML =
+    //     'Latitude: ' + position.coords.latitude + '<br>Longitude: ' + position.coords.longitude;
+};
+
+getLocation();
 </script>
 
 <template>
@@ -87,11 +112,9 @@
         }
 
         .pill {
-          @apply rounded-full bg-gray-5 text-gray-2 font-medium pt-2 text-sm ml-2 mb-2;
-          width: 80px;
-          height: 32px;
-
-          
+            @apply rounded-full bg-gray-5 text-gray-2 font-medium pt-2 text-sm ml-2 mb-2;
+            width: 80px;
+            height: 32px;
         }
     }
     .fav-sheet {

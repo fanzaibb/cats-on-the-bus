@@ -29,7 +29,7 @@ export function getArrivalTime(data) {
 }
 
 export function getStopInfo(data) {
-    console.log(data.route.name)
+    console.log(data.route.name);
     const params = {
         $format: 'JSON'
     };
@@ -40,10 +40,16 @@ export function getStopInfo(data) {
     });
 }
 
-export function getNearByStops(data) {
-    return request({
-        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/Stop/NearBy?$top=30&$spatialFilter=nearby(24.9966271%2C%20121.5041027%2C%20200)&$format=JSON`,
-        method: 'get',
-        data
-    });
-}
+// export function getNearByStops(data) {
+//     const params = {
+//         $format: 'JSON',
+//         $top: 30,
+//         $spatialFilter: `nearby(${data}, 500)`
+//     };
+//     console.log(params)
+//     return request({
+//         url: 'https://ptx.transportdata.tw/MOTC/v2/Bus/Stop/NearBy',
+//         method: 'get',
+//         params
+//     });
+// }
