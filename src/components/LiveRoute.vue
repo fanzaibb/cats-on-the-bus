@@ -6,8 +6,7 @@ import { ref, computed } from 'vue';
 const router = useRouter();
 const store = useStore();
 const dir = ref(0);
-const data = computed(() => [...store.state.routeData].filter(e => e.Direction === dir.value));
-console.log(data.value);
+const data = computed(() => store.state.routeData.filter(e => e.Direction === dir.value));
 
 const setStatus = stop => {
     if (stop.arrival < 0) return { text: '未發車', class: 'init' };

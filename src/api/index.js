@@ -7,33 +7,34 @@ export function getAllCities() {
     });
 }
 
-export function getCityBus(data) {
+export function getCityBus(city) {
     return request({
-        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/Route/City/Kaohsiung?$format=JSON`,
-        method: 'get',
-        data
+        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/Route/City/${city}?$format=JSON`,
+        method: 'get'
     });
 }
 
-export function getArrivalTime() {
+export function getArrivalTime(data) {
+    console.log(data);
     const params = {
         $format: 'JSON',
-        $filter: "RouteUID eq 'KHH100'",
+        $filter: `RouteUID eq \'${data.route.RouteUID}\'`,
         $orderby: 'StopSequence asc'
     };
     return request({
-        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/EstimatedTimeOfArrival/City/Kaohsiung`,
+        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/EstimatedTimeOfArrival/City/${data.city}`,
         method: 'get',
         params
     });
 }
 
-export function getStopInfo() {
+export function getStopInfo(data) {
+    console.log(data.route.name)
     const params = {
         $format: 'JSON'
     };
     return request({
-        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/StopOfRoute/City/Kaohsiung/100`,
+        url: `https://ptx.transportdata.tw/MOTC/v2/Bus/StopOfRoute/City/${data.city}/${data.route.name}`,
         method: 'get',
         params
     });
@@ -46,5 +47,3 @@ export function getNearByStops(data) {
         data
     });
 }
-
-// https://ptx.transportdata.tw/MOTC/v2/Bus/StopOfRoute/City/Kaohsiung

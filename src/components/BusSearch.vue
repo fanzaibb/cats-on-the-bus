@@ -1,43 +1,50 @@
 <script setup>
 import Select from '@/components/Select.vue';
-import { routes } from '@/utils/cities.json';
-import { ref, reactive } from 'vue';
+import { ref, reactive, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useStore } from 'vuex';
 
 const router = useRouter();
 const store = useStore();
-const allBus = routes.map(e => e.RouteName.Zh_tw);
-
-const favorite = ref([]);
+const allBus = computed(() => store.state.allBus);
+const favorite = ref([2]);
 const input = ref('');
-const searchResult = reactive({});
+const searchResult = computed(() => {
+    const list = [];
+    if (input.value.length > 0) {
+        allBus.value.forEach(e => {
+            if (e.name.indexOf(input.value) >= 0) list.push(e);
+        });
+    }
+    return list;
+});
 
-const searchBus = async () => {
-    if (input.value.length === 0) return;
-    await store.dispatch('getRoute', input.value);
-    router.push('/live_route')
+const showRouteInfo = async bus => {
+    await store.dispatch('getRoute', bus);
+    router.push('/live_route');
 };
 </script>
 
 <template>
     <div class="sheet-wrapper">
         <div class="sheet input-sheet flex-grow-0">
-            <button @click="searchBus">
-                <img src="@/assets/search.svg" alt="search icon" class="pt-5 pr-4" width="60" />
-            </button>
             <div class="pt-4">
+                <Select />
+            </div>
+            <button>
+                <img src="@/assets/search.svg" alt="search icon" class="pt-3 pr-2" width="50" />
+            </button>
+            <div class="pt-4 mr-2">
                 <input
                     v-model.trim="input"
                     type="text"
                     class="border-b-2"
                     placeholder="請輸入公車號碼"
-                    @keyup.enter="searchBus"
                 />
             </div>
         </div>
         <div class="m-input-sheet">
-            <Select />
+            <Select type="mobile" />
             <div class="m-input">
                 <button @click="searchBus">
                     <img
@@ -60,11 +67,16 @@ const searchBus = async () => {
             <div v-for="text in textList" :key="text" class="input-btn">{{ text }}</div>
         </div> -->
         <div v-if="favorite.length !== 0" class="sheet fav-sheet flex-grow relative">
-            <p class="pl-10 pt-6 text-left text-gray-6 font-medium">我的最愛</p>
-            <div v-for="i in 5" :key="i" class="fav-box" @click="router.push('/live_route')">
+            <p class="pl-10 pt-6 text-left text-gray-6 font-medium">搜尋結果</p>
+            <div
+                v-for="bus in searchResult"
+                :key="bus.name"
+                class="fav-box"
+                @click="showRouteInfo(bus)"
+            >
                 <div class="text-left text-sm pl-4 font-medium" style="width: 241px">
-                    <p class="text-blue-2">11</p>
-                    <p>台大－新店</p>
+                    <p class="text-blue-2">{{ bus.name }}</p>
+                    <p>{{ bus.DepartureStopNameZh }}－{{ bus.DestinationStopNameZh }}</p>
                 </div>
                 <div class="pt-2">
                     <img src="@/assets/heart.svg" alt="heart" />
@@ -113,7 +125,7 @@ const searchBus = async () => {
             height: 73px;
             input {
                 outline: none;
-                width: 276px;
+                width: 236px;
                 border-color: #eeeeee;
                 height: 36px;
             }
@@ -165,6 +177,9 @@ const searchBus = async () => {
         .fav-box {
             @apply flex px-6 py-2 justify-between cursor-pointer;
             box-shadow: 0px -0.5px 0px 0px #00000033 inset;
+            &:hover {
+                text-shadow: 3px 3px 3px #cccccc;
+            }
         }
         @media (max-width: 767px) {
             @apply overflow-auto absolute w-full top-10 pt-14;
