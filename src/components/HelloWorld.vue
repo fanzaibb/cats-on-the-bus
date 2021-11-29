@@ -19,7 +19,7 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
 
 <template>
     <div id="map-page">
-        <div class="logo" @click="router.push('/home')">
+        <div class="logo" @click="router.push('/')">
             <img src="@/assets/logo.svg" alt="" />
         </div>
         <div class="icons">

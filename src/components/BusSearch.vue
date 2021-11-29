@@ -1,5 +1,6 @@
 <script setup>
 import Select from '@/components/Select.vue';
+import LiveRoute from '@/components/LiveRoute.vue';
 import { ref, reactive, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useStore } from 'vuex';
@@ -9,6 +10,7 @@ const store = useStore();
 const allBus = computed(() => store.state.allBus);
 const favorite = ref([2]);
 const input = ref('');
+const showRoute = ref(false)
 const searchResult = computed(() => {
     const list = [];
     if (input.value.length > 0) {
@@ -21,12 +23,13 @@ const searchResult = computed(() => {
 
 const showRouteInfo = async bus => {
     await store.dispatch('getRoute', bus);
-    router.push('/live_route');
+    showRoute.value = true
+    // router.push('/live_route');
 };
 </script>
 
 <template>
-    <div class="sheet-wrapper">
+    <div v-if="!showRoute" class="sheet-wrapper">
         <div class="sheet input-sheet flex-grow-0">
             <div class="pt-4">
                 <Select />
@@ -66,7 +69,7 @@ const showRouteInfo = async bus => {
         <!-- <div class="sheet dial-btn-sheet flex-grow-0">
             <div v-for="text in textList" :key="text" class="input-btn">{{ text }}</div>
         </div> -->
-        <div v-if="favorite.length !== 0" class="sheet fav-sheet flex-grow relative">
+        <div v-if="searchResult.length !== 0" class="sheet fav-sheet flex-grow relative">
             <p class="pl-10 pt-6 text-left text-gray-6 font-medium">搜尋結果</p>
             <div
                 v-for="bus in searchResult"
@@ -91,6 +94,7 @@ const showRouteInfo = async bus => {
             </div>
         </div>
     </div>
+    <LiveRoute v-else @back="showRoute = false"/>
 </template>
 
 <style lang="scss" scoped>

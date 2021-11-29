@@ -1,5 +1,5 @@
 <script setup>
-// import { getNearByStops } from '@/api';
+import { getNearByStops } from '@/api';
 import { useStore } from 'vuex';
 import { ref } from 'vue';
 

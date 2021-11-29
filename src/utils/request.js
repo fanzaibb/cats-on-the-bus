@@ -43,6 +43,7 @@ service.interceptors.response.use(
         return res;
     },
     error => {
+        console.log('catch errrrrrr');
         console.error('Axios response error: ' + error);
         return Promise.resolve(error);
     }

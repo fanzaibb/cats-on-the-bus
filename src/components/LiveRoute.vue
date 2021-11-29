@@ -1,18 +1,24 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { useStore } from 'vuex';
-import { ref, computed } from 'vue';
+import { ref, computed, defineEmits } from 'vue';
 
 const router = useRouter();
 const store = useStore();
+const emit = defineEmits(['back'])
 const dir = ref(0);
 const data = computed(() => store.state.routeData.filter(e => e.Direction === dir.value));
-
+const route = computed(() => store.state.currentRoute);
 const setStatus = stop => {
     if (stop.arrival < 0) return { text: '未發車', class: 'init' };
     else if (stop.arrival === 0) return { text: '即將進站', class: 'incoming' };
-    else return { text: stop.arrival, class: 'show-time' };
+    else if (isNaN(Math.round(stop.arrival))) return { text: '無進站資訊', class: 'init' };
+    else return { text: Math.round(stop.arrival), class: 'show-time' };
 };
+const back = () => {
+    store.dispatch('resetRoute');
+    emit('back');
+}
 </script>
 
 <template>
@@ -20,26 +26,23 @@ const setStatus = stop => {
         <div class="sheet input-sheet flex-grow-0">
             <div class="bus-title">
                 <div class="m-slide-toggle"></div>
-                <button @click="router.go(-1)"><img src="@/assets/dir.svg" alt="back" /></button>
-                <p class="z-10">11</p>
+                <button @click="back"><img src="@/assets/dir.svg" alt="back" /></button>
+                <p class="z-10">{{ route.RouteName.Zh_tw }}</p>
             </div>
             <div class="tab">
-                <button @click="dir = 0">去程</button>
-                <button @click="dir = 1">回程</button>
+                <button @click="dir = 0">{{ route.DepartureStopNameZh }}</button>
+                <button @click="dir = 1">{{ route.DestinationStopNameZh }}</button>
             </div>
             <div class="stop-info">
                 <div v-for="stop in data" :key="stop.StopID" class="flex items-center pb-5">
                     <div class="pill" :class="setStatus(stop).class">
                         {{ setStatus(stop).text }}
                     </div>
-                    <span class="text-sm pl-8 pb-1"
-                        >{{ stop.StopName.Zh_tw }} {{ stop.EstimateTime }}</span
-                    >
+                    <span class="text-sm pl-8 pb-1">{{ stop.StopName.Zh_tw }}</span>
                 </div>
                 <div class="progress-line">
                     <div v-for="(stop, idx) in data" :key="stop.StopID">
                         <div class="dot bg-blue-2"></div>
-                        {{ stop.StopID  }}
                         <div v-if="idx !== data.length - 1" class="line"></div>
                     </div>
                 </div>
@@ -127,7 +130,7 @@ const setStatus = stop => {
         top: 12px;
         left: 154px;
         z-index: 800;
-        max-height: 96vh;
+        max-height: 95vh;
         .sheet {
             @apply bg-white rounded-2xl;
             width: 409px;
@@ -170,7 +173,7 @@ const setStatus = stop => {
             }
             .stop-info {
                 @apply px-10 relative overflow-auto;
-                height: calc(100vh - 118px);
+                height: calc(90vh - 118px);
             }
         }
 

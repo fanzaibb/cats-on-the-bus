@@ -40,16 +40,16 @@ export function getStopInfo(data) {
     });
 }
 
-// export function getNearByStops(data) {
-//     const params = {
-//         $format: 'JSON',
-//         $top: 30,
-//         $spatialFilter: `nearby(${data}, 500)`
-//     };
-//     console.log(params)
-//     return request({
-//         url: 'https://ptx.transportdata.tw/MOTC/v2/Bus/Stop/NearBy',
-//         method: 'get',
-//         params
-//     });
-// }
+export function getNearByStops(data) {
+    const params = {
+        $format: 'JSON',
+        $top: 30,
+        $spatialFilter: `nearby(${data}, 500)`
+    };
+    console.log(params)
+    return request({
+        url: 'https://ptx.transportdata.tw/MOTC/v2/Bus/Stop/NearBy',
+        method: 'get',
+        params
+    });
+}

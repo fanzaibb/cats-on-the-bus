@@ -6,7 +6,11 @@ const router = createRouter({
     scrollBehavior() {
         return { top: 0 };
     },
-    routes: [
+    routes: [,
+        {
+            path: '/',
+            component: () => import('@/views/Home.vue')
+        },
         {
             path: '/',
             component: () => import('@/components/HelloWorld.vue'),
@@ -22,16 +26,12 @@ const router = createRouter({
                 {
                     path: 'route_search',
                     component: () => import('@/components/RouteSearch.vue')
-                },
-                {
-                    path: 'live_route',
-                    component: () => import('@/components/LiveRoute.vue')
                 }
+                // {
+                //     path: 'live_route',
+                //     component: () => import('@/components/LiveRoute.vue')
+                // }
             ]
-        },
-        {
-            path: '/home',
-            component: () => import('@/views/Home.vue')
         }
     ]
 });

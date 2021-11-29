@@ -1,65 +1,72 @@
 <script setup>
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { getNearByStops } from '@/api';
 import { ref, onMounted, reactive, computed, watch, watchEffect } from 'vue';
 import { useStore } from 'vuex';
 import mockInfo from '@/store/mockInfo.json';
 
 const store = useStore();
 const info = computed(() => store.state.stopInfo?.forward);
+const showNearByStop = computed(() => store.state.path === '/nearby_stop');
+const routeData = computed(() => store.state.routeData);
 const pos = ref([]);
 
-const test = mockInfo[0].Stops;
-const lineList = mockInfo[0].Stops.map(e => [
-    e.StopPosition.PositionLon,
-    e.StopPosition.PositionLat
-]);
+// const test = mockInfo[0].Stops;
+const lineList = computed(() =>
+    // info.value.Stops.map(e => [e.StopPosition.PositionLon, e.StopPosition.PositionLat])
+    info.value.map(e => [e.StopPosition.PositionLon, e.StopPosition.PositionLat])
+);
 const map = ref(null);
 let lineLayer;
 const location = computed(() => {
-    if (store.state.location.length !== 0) map.value.classList.remove('show-blur');
+    if (store.state.location.length !== 0 || routeData.value.length !== 0) {
+        if (map.value.classList.contains('show-blur')) map.value.classList.remove('show-blur');
+    }
     return store.state.location;
 });
 
-watchEffect(
-    () => {
-        if (location.value.length !== 0) {
-            showAllStops(test);
-            drawRouteLine(lineList)
-            // setNearByStops();
-        }
-        // stop();
+    // const res = await getNearByStops(pos.value)
+watchEffect(async() => {
+    if (showNearByStop && location.value.length !== 0) {
+        const res = await getNearByStops(location.value)
+        showAllStops(res.value);
+        // drawRouteLine(lineList.value);
+        // setNearByStops();
+    } else if (routeData.value.length !== 0) {
+        showAllStops(info.value);
+        drawRouteLine(lineList.value);
+    } else {
+        stop();
     }
-);
+});
 
 let mymap;
-let myIcon = reactive(
-    L.icon({
-        iconUrl: 'src/assets/locate.svg',
-        iconSize: [38, 95],
-        iconAnchor: [20, 54],
-        popupAnchor: [-3, -76],
-        riseOnHover: true,
-        shadowUrl: 'src/assets/locate-2.svg',
-        shadowSize: [68, 95],
-        shadowAnchor: [35, 54]
-    })
-);
-let nearByIcon = reactive(
-    L.icon({
-        iconUrl: 'src/assets/locate-dot.svg',
-        iconSize: [30, 125],
-        iconAnchor: [20, 54],
-        popupAnchor: [-3, -76],
-        riseOnHover: true
-        // shadowUrl: 'src/assets/locate-bus2.svg',
-        // shadowSize: [68, 95],
-        // shadowAnchor: [35, 54]
-    })
-);
+let myIcon = L.icon({
+    iconUrl: 'src/assets/locate.svg',
+    iconSize: [38, 95],
+    iconAnchor: [20, 54],
+    popupAnchor: [-3, -76],
+    riseOnHover: true,
+    shadowUrl: 'src/assets/locate-2.svg',
+    shadowSize: [68, 95],
+    shadowAnchor: [35, 54]
+});
+let nearByIcon = L.icon({
+    iconUrl: 'src/assets/locate-dot.svg',
+    iconSize: [30, 125],
+    iconAnchor: [20, 54],
+    popupAnchor: [-3, -76],
+    riseOnHover: true
+    // shadowUrl: 'src/assets/locate-bus2.svg',
+    // shadowSize: [68, 95],
+    // shadowAnchor: [35, 54]
+});
 
 const showAllStops = list => {
+    console.log(list);
     list.forEach(e => {
+        console.log(e);
         L.marker([e.StopPosition.PositionLat, e.StopPosition.PositionLon], {
             icon: nearByIcon
         })
@@ -104,16 +111,13 @@ const drawRouteLine = lineList => {
     mymap.fitBounds(lineLayer.getBounds());
 };
 
-
-const showBlur = computed(() => location.value.length === 0);
-
 onMounted(() => {
     mymap = L.map('map').setView([22.606123, 120.338443], 14);
     L.tileLayer(
         'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
         {
             attribution:
-                'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                'Map &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: 18,
             id: 'fanzaibb/ckw8m6n2n5tul15o6m50qgefa',
             tileSize: 512,

@@ -11,7 +11,8 @@ export default createStore({
         allBus: [],
         routeData: [],
         stopInfo: {},
-        location: []
+        location: [],
+        currentRoute: {}
     },
     mutations: {
         SET_PATH(state, path) {
@@ -35,6 +36,9 @@ export default createStore({
         SET_LOCATION(state, arr) {
             state.location = arr;
         },
+        SET_CURRENT_ROUTE(state, data) {
+            state.currentRoute = data;
+        }
     },
     actions: {
         setPath({ commit }, path) {
@@ -55,8 +59,10 @@ export default createStore({
         async getRoute({ state, commit }, payload) {
             const param = { city: state.currentCity.City, route: payload };
             const routeSchedule = await getArrivalTime(param);
+            // const routeSchedule = mockRoute;
             const allStops = await getStopInfo(param);
-            console.log(allStops);
+            // const allStops = mockInfo;
+            // console.log(allStops);
             const obj = {};
             allStops.forEach(e => {
                 if (e.Direction === 0) obj.forward = [...e.Stops];
@@ -64,11 +70,19 @@ export default createStore({
             });
             const now = Date.now();
             routeSchedule.forEach(e => {
-                e.arrival = Math.round((Date.parse(e.NextBusTime) - now) / 1000 / 60);
+                if (e.EstimateTime === 0) e.arrival = e.EstimateTime;
+                else
+                    e.arrival =
+                        e.EstimateTime / 60 ||
+                        Math.round((Date.parse(e.NextBusTime) - now) / 1000 / 60);
             });
+            commit('SET_CURRENT_ROUTE', payload);
             commit('SET_ROUTE', routeSchedule);
             commit('SET_STOP_INFO', obj);
+        },
+        resetRoute({ commit }) {
+            commit('SET_LOCATION', []);
+            commit('SET_CURRENT_ROUTE', []);
         }
-    },
-    getters: {}
+    }
 });
