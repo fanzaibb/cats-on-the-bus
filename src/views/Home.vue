@@ -17,13 +17,13 @@ const router = useRouter();
                         <p>公車查詢</p>
                     </div>
                 </div>
-                <div class="btns" @click="router.push('/route_search')">
+                <div class="btns">
                     <div>
                         <img src="@/assets/map-icon.svg" alt="" />
                         <p>路線查詢</p>
                     </div>
                 </div>
-                <div class="btns" @click="router.push('/nearby_stop')">
+                <div class="btns">
                     <div>
                         <img src="@/assets/sidebar-stop.svg" alt="" width="60" />
                         <p>附近公車</p>

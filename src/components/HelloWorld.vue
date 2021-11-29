@@ -23,11 +23,7 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
             <img src="@/assets/logo.svg" alt="" />
         </div>
         <div class="icons">
-            <div
-                class="mb-10"
-                :class="{ active: path === '/nearby_stop' }"
-                @click="router.push('/nearby_stop')"
-            >
+            <div class="mb-10" :class="{ active: path === '/nearby_stop' }">
                 <img src="@/assets/sidebar-stop.svg" alt="" width="60" />
             </div>
             <div
@@ -37,10 +33,7 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
             >
                 <img src="@/assets/bus-icon.svg" alt="" width="50" class="mx-auto" />
             </div>
-            <div
-                :class="{ active: path === '/route_search' }"
-                @click="router.push('/route_search')"
-            >
+            <div :class="{ active: path === '/route_search' }">
                 <img src="@/assets/map-icon.svg" alt="" width="50" class="mx-auto" />
             </div>
         </div>
@@ -118,7 +111,7 @@ const toggleMenu = () => (showMMenu.value = !showMMenu.value);
 .active {
     @apply relative;
     &::after {
-        @apply rounded-full w-2 h-2 bg-red absolute -bottom-4 left-7;
+        @apply rounded-full w-2 h-2 bg-red absolute -bottom-4 left-6;
         content: '';
     }
 }
